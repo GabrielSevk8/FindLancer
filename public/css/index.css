@@ -1,0 +1,24 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo
+{
+    width: 19%;
+}
+header,#lesquerdo, #ldireito
+{
+    display: flex;
+    align-items: center;
+}
+
+header
+{
+    padding: 1rem;
+}
+
+
