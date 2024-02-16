@@ -6,35 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset("css/login.css") }}">
     <title>Login</title>
+
+    <style>
+
+    </style>
+
 </head>
 <body>
 
-    <form action="">
+    <div class="movi">
+        <form action="">
 
-    <h1>Login</h1>
+            <h1>Login</h1>
 
-        <div>
+                <div>
 
-            <div>
-                <label for="email">E-mail</label>
-                <input type="email" class="form-control" id="email" placeholder="" required>
-            </div>
+                    <div class="entraDados">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="" required>
+                    </div>
 
-            <div>
-                <label for="senha">Senha</label>
-                <input type="password" class="form-control" id="senha" placeholder="">
-            </div>
+                    <div class="entraDados">
+                        <label for="senha">Senha</label>
+                        <input type="password" class="form-control" id="senha" placeholder="">
+                    </div>
 
-            <div class="b">
-                <a class="" href="#">Criar uma conta</a>
-                <a class="" href="#">Esqueci a senha</a>
-            </div>
+                    <div class="b">
+                        <a class="links" href="#">Criar uma conta</a>
+                        <a class="links" href="#">Esqueci a senha</a>
+                    </div>
 
-            <input class="" type="submit" name="entrar" id="entrar" value="Logar no Sistema">
+                    <input class="" type="submit" name="entrar" id="entrar" value="Logar no Sistema">
 
-        </div>
+                </div>
 
-    </form>
-
+        </form>
+    </div>
 </body>
 </html>

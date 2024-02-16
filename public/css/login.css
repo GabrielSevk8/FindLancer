@@ -1,1 +1,44 @@
+@font-face{
+    font-family: test;
+src: url("font/Palatino Font.ttf");
+}
 
+*
+{
+    font-family: test;
+}
+
+body{
+    background-color: gray;
+}
+
+.movi{
+    margin-left: 900px;
+    margin-top: 200px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 300px;
+    height: 500px;
+    margin: 10px 10px;
+    padding: 20px 20px 20px;
+    border-radius: 2%;
+}
+
+.entraDados{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.links{
+    text-decoration: none;
+    color: black;
+}
+
+.links:hover{
+    color: red
+}
