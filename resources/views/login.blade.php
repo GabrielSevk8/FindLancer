@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,9 @@
     </style>
 
 </head>
-<body>
+<body class="container">
+
+    <img class="logo" src={{ asset('image/Findlancer_logo3.png') }} alt="">
 
     <div class="movi">
         <form action="">
@@ -32,11 +34,19 @@
                     </div>
 
                     <div class="b">
-                        <a class="links" href="#">Criar uma conta</a>
-                        <a class="links" href="#">Esqueci a senha</a>
+                        <div>
+                            <a class="links" href="#">Criar uma conta</a>
+                        </div>
+                        <div>
+                            <a class="links" href="#">Esqueci a senha</a>
+                        </div>
+
                     </div>
 
-                    <input class="" type="submit" name="entrar" id="entrar" value="Logar no Sistema">
+                    <div>
+                        <input class="entrar" type="submit" name="entrar" id="entrar" value="Logar no Sistema">
+                    </div>
+
 
                 </div>
 

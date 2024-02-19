@@ -14,7 +14,7 @@
         src: url("font/Palatino Font.ttf");
         }
 
-        *
+        *{{  }}
         {
             font-family: test;
         }
