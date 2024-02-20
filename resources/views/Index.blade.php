@@ -14,7 +14,7 @@
         src: url("font/Palatino Font.ttf");
         }
 
-        *{{  }}
+
         {
             font-family: test;
         }
@@ -23,7 +23,7 @@
 <body>
     <header>
         <div id="lesquerdo">
-            <img src="{{ asset('image/Findlancer_logo2.png') }}" alt="" id="logo">
+            <img src="{{ asset('image/Findlancer_logo3.png') }}" alt="" id="logo">
             <h2>Opção 1</h2>
             <h2>Opção 2</h2>
             <h2>Opção 3</h2>
@@ -35,25 +35,36 @@
         </div>
 
         <div id="ldireito">
-            <i class="bi bi-search"></i>
+            <i class="bi bi-search lupa "></i>
             <div id="login">
                 Acessar sua Conta
             </div>
         </div>
     </header>
 
+
+
+
+
+
+
+
+
     <main>
         <div id="carrossel">
-            <img src="{{ asset('image/Banner1.jpg') }}" alt="">
+            <img src="{{ asset('image/Banner1.jpg') }}" alt="" id="banner">
         </div>
 
         <div id="criacaoContas">
-            <div id="cliente">
-                TESTE1
+            <div id="fundoContas">
+                <div id="cliente">
+                    TESTE1
+                </div>
+                <div id="empresa">
+                    TESTE2
+                </div>
             </div>
-            <div id="empresa">
-                TESTE2
-            </div>
+
         </div>
 
         <div id="selecaoFiltros">

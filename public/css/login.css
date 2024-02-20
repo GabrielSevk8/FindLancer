@@ -1,15 +1,14 @@
 @font-face{
-    font-family: 'test';
-    src: "{{ asset('font/PalatinoFont.ttf') }}";
+    font-family: titulo;
+    src: url('../fonts/CinzelRegular.ttf');
 }
 
-*
-{
-    font-family: test;
+h1{
+    font-family: titulo;
 }
 
 body{
-    background-color: #2A2B29;
+    background-color: #000;
 }
 
 .container{
@@ -18,11 +17,11 @@ body{
 
 .logo{
     margin-top: 100px;
-    margin-left: 70px;
+    margin-left: 200px;
 }
 
 .movi{
-    margin-left: 25px;
+    margin-left: 1px;
     margin-top: 150px;
 }
 
@@ -31,7 +30,7 @@ form{
     flex-direction: column;
     background-color: white;
     width: 300px;
-    height: 500px;
+    height: 550px;
     margin: 10px 10px;
     padding: 20px 20px 20px;
     border-radius: 2%;
@@ -56,22 +55,111 @@ form{
 }
 
 .links:hover{
-    color: red
+    color: #c40001
 }
 
-.entrar{
+.buttonEntrar{
     margin-top: 40px;
-    margin-left: 45px;
+    margin-left: 50px;
+}
+
+.entrar,
+button
+{
+
     width: 200px;
     height: 40px;
     color: white;
     background-color: #2A2B29;
     transition: 0.5s;
-
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
 
 .entrar:hover
 {
+    color: #c40001;
+}
+
+.divisoria
+{
+    position: relative;
+    text-align: center;
+}
+
+.divisoria::before
+{
+    content: "";
+    position: absolute;
+    width: 120px;
+    border-bottom: dotted 1px black;
+    top: 50%;
+    left: 0;
+}
+
+.divisoria::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    border-bottom: dotted 1px black;
+    top: 50%;
+    right: 0;
+}
+
+.tokens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.token
+{
     color: black;
-    background-color: red;
+    background: white;
+    margin: 10px 0;
+}
+
+.token img
+{
+    width: 20px;
+    height: auto;
+}
+
+.token1:hover
+{
+    color: #c40001;
+}
+
+.token2:hover
+{
+    color: #c40001;
+}
+
+.token3:hover
+{
+    color: #c40001;
+}
+
+.icon1
+{
+    height: 16px;
+    width: 20px;
+}
+
+.icon2
+{
+    height: 16px;
+    width: 20px;
+    padding-top: 2px;
+}
+
+.icon3
+{
+    height: 16px;
+    width: 20px;
+    padding-top: 2px;
 }

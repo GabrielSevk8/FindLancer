@@ -6,15 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset("css/login.css") }}">
     <title>Login</title>
-
-    <style>
-
-    </style>
-
 </head>
 <body class="container">
 
-    <img class="logo" src={{ asset('image/Findlancer_logo3.png') }} alt="">
+    <img class="logo" src={{ asset('image/Findlancer_logo.jpg') }} alt="">
 
     <div class="movi">
         <form action="">
@@ -43,10 +38,23 @@
 
                     </div>
 
-                    <div>
-                        <input class="entrar" type="submit" name="entrar" id="entrar" value="Logar no Sistema">
+                    <div class="buttonEntrar">
+                        <input class="entrar" type="submit" name="entrar" id="entrar" value="Login">
                     </div>
 
+                    <div >
+                        <p class="divisoria">Ou</p>
+                    </div>
+
+                    <div class="tokens">
+
+                        <button class="token"><img class="icon1" src="{{ asset('image/google.png') }}" alt=""> <span>Entre com Google</span> </button>
+
+                        <button class="token"><img class="icon2" src="{{ asset('image/linkedin.png') }}" alt=""> Entre com GitHub</button>
+
+                        <button class="token"><img class="icon3" src="{{ asset('image/github.png') }}" alt=""> Entre com LinkedIn</button>
+
+                    </div>
 
                 </div>
 

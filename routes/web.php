@@ -21,8 +21,12 @@ Route::get('/login', function () {
     return view('login');
 });
 
-Route::get('/cadastro', function () {
-    return view('cadastro');
+Route::get('/cadastro/usuario', function () {
+    return view('cadastro_usuario');
+});
+
+Route::get('/cadastro/empresa', function () {
+    return view('cadastro_empresa');
 });
 
 Route::get('/usuario', function () {
