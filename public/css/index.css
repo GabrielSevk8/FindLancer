@@ -9,6 +9,12 @@
 
 }
 
+p
+{
+    color: #5c6066;
+    line-height: 1.7;
+}
+
 #logo
 {
     width: 20%;
@@ -31,9 +37,12 @@ header
     position: sticky;
     top: 0;
     background-color: white;
-
 }
 
+header h2
+{
+    color: #5c6066;
+}
 
 header,#lesquerdo, #ldireito
 {
@@ -91,8 +100,11 @@ header,#lesquerdo, #ldireito
     cursor: pointer;
     background-image: url("/image/Banner1.jpg");
     background-size: cover;
-    height: 75vh;
+    height: 70vh;
     width: 100%;
+    display: block;
+    z-index: -1;
+
 }
 
 
@@ -100,13 +112,76 @@ header,#lesquerdo, #ldireito
 {
     display: flex;
     justify-content: center;
+    background-color:#232323;
+    height: 89vh;
+
 }
 
 #fundoContas
 {
-    background-color: gray;
+    background-color:#212121;
     width: 75%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    height: 65vh;
+    margin-bottom: 2rem;
+    padding: 4rem;
+    padding-bottom: 2rem;
+    top: 10%;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5),
+                -15px -15px 15px rgba(0, 0, 0, 0.5),
+                -15px 15px 15px rgba(0, 0, 0, 0.5),
+                15px -15px 15px rgba(0, 0, 0, 0.5);
+
 }
+
+#fundoContas h1
+{
+    font-size: 2.3rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+#fundoContas button
+{
+    border: none;
+    background-color: #c40001;
+    padding: 1rem;
+    border-radius: 7px;
+    color: white;
+    margin-top: 3rem;
+}
+#empresa
+{
+    border-right: 1px solid #dde0e6;
+}
+
+#cliente, #empresa
+{
+    background-color: white;
+    height: 100%;
+    width: 50%;
+    padding: 3rem;
+}
+
+
+
+
+#selecaoFiltros
+{
+    display: flex;
+    height: 55vh;
+    background-color: #c40001;
+    justify-content: space-between;
+
+}
+
+#listFiltros
+{
+    display: flex;
+    padding-left: 6rem;
+    padding-right: 2rem;
+}
+
 

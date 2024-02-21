@@ -16,7 +16,7 @@
 
             <h1>Login</h1>
 
-                <div>
+                <div class="conteudo">
 
                     <div class="entraDados">
                         <label for="email">E-mail</label>
@@ -39,7 +39,7 @@
                     </div>
 
                     <div class="buttonEntrar">
-                        <input class="entrar" type="submit" name="entrar" id="entrar" value="Login">
+                        <button class="entrar">Login</button>
                     </div>
 
                     <div >
@@ -50,15 +50,16 @@
 
                         <button class="token"><img class="icon1" src="{{ asset('image/google.png') }}" alt=""> <span>Entre com Google</span> </button>
 
-                        <button class="token"><img class="icon2" src="{{ asset('image/linkedin.png') }}" alt=""> Entre com GitHub</button>
+                        <button class="token"><img class="icon2" src="{{ asset('image/linkedin.png') }}" alt=""> <span>Entre com GitHub</span></button>
 
-                        <button class="token"><img class="icon3" src="{{ asset('image/github.png') }}" alt=""> Entre com LinkedIn</button>
+                        <button class="token"><img class="icon3" src="{{ asset('image/github.png') }}" alt=""> <span>Entre com LinkedIn</span></button>
 
                     </div>
 
                 </div>
 
         </form>
+
     </div>
 </body>
 </html>

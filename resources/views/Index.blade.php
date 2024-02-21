@@ -52,43 +52,66 @@
 
     <main>
         <div id="carrossel">
-            <img src="{{ asset('image/Banner1.jpg') }}" alt="" id="banner">
+            <img src="{{ asset('image/Banner1.png') }}" alt="" id="banner">
         </div>
 
         <div id="criacaoContas">
             <div id="fundoContas">
-                <div id="cliente">
-                    TESTE1
-                </div>
                 <div id="empresa">
-                    TESTE2
+                    <p>Para sua</p>
+                    <h1>Empresa</h1>
+
+                    <p>Encontre os melhores free-lancers para a sua empresa
+                        Use nossos serviços para filtrar e ter as melhores estatísticas
+                        para encontrar o melhor funcionário.
+                    </p>
+
+                    <button> Criar Conta Empresa</button>
+                </div>
+                <div id="cliente">
+                    <p>Para</p>
+                    <h1>Você</h1>
+                    <p>Ache vagas destinada ao seu perfil como free-lancer,
+                        utilize nossos filtros para buscara vaga ideal, usando
+                        uma interface fácil de intuitiva.
+                    </p>
+                    <button>Criar conta Pessoal</button>
                 </div>
             </div>
 
         </div>
 
         <div id="selecaoFiltros">
-            <H1>Procure vagas por Áreas </H1>
-            <p>Utilize nossos filtros abaixo para encontra a vaga ideal</p>
-            <div id="front">
-                FRONT
+
+            <div id="listFiltros">
+                <div class="filtro">
+                    <p>FRONT</p>
+                </div>
+
+                <div class="filtro">
+                    <p>BACK</p>
+                </div>
+
+                <div class="filtro">
+                    <p>FULL STACK</p>
+                </div>
+
+                <div class="filtro">
+                    <p>HARDWARE</p>
+                </div>
+
+                <div class="filtro">
+                    <p>Redes de Computadores</p>
+                </div>
+
+            </div>
+            <div id="textos">
+                <p>Find Lancer</p>
+                <H1>Procure vagas por areas </H1>
+                <p>Utilize nossos filtros abaixo para encontra a vaga ideal</p>
             </div>
 
-            <div id="back">
-                BACK
-            </div>
 
-            <div id="fullstack">
-                FULL STACK
-            </div>
-
-            <div id="hardware">
-                HARDWARE
-            </div>
-
-            <div id="redes">
-                Redes de Computadores
-            </div>
         </div>
     </main>
 

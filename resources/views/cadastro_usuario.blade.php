@@ -24,7 +24,7 @@
 </head>
 <body>
 
-    <h2>Cadastro de Usuário</h2>
+    <h2>Cadastro</h2>
     <div class="container">
         <form action="/submit_form" method="post" onsubmit="return validarSenha()">
 
@@ -84,7 +84,6 @@
             <div class="box">
                 <label for="estadoCivil">Estado Civil:</label>
                 <select id="estadoCivil" name="estadoCivil" required>
-                    <option value="" disabled selected>Selecione</option>
                     <option value="solteiro">Solteiro</option>
                     <option value="casado">Casado</option>
                     <option value="desquitado">Divorciado</option>
@@ -111,6 +110,7 @@
     </script>
 
     </form>
+
 
 </body>
 </html>
