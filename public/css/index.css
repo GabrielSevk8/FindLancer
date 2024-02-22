@@ -20,7 +20,12 @@ p
     width: 20%;
     cursor: pointer;
     background-color: none;
+    transition: transform ease-in-out 150ms;
+}
 
+#logo:hover
+{
+    transform: scale(1.1);
 }
 
 #banner
@@ -33,15 +38,23 @@ header
     display: flex;
     justify-content: space-between;
     padding-left: 2rem;
-
     position: sticky;
     top: 0;
     background-color: white;
+    border-bottom: 2px solid black;
 }
 
 header h2
 {
     color: #5c6066;
+    cursor: pointer;
+    transition: color ease-in-out 100ms;
+}
+
+header h2:hover
+{
+
+    color: #232323;
 }
 
 header,#lesquerdo, #ldireito
@@ -49,12 +62,14 @@ header,#lesquerdo, #ldireito
     display: flex;
     align-items: center;
     height: 10vh;
+
 }
 
 #lesquerdo, #ldireito
 {
     display: flex;
     justify-content: space-between;
+
 }
 
 #lesquerdo
@@ -81,7 +96,16 @@ header,#lesquerdo, #ldireito
     justify-content: center;
     cursor: pointer;
     color: white;
+    border: none;
+    border-bottom: 1px solid black;
+    transition: background-color ease-in-out 150ms;
 }
+
+#login:hover
+{
+    background-color: #212121;
+}
+
 
 .lupa
 {
@@ -90,7 +114,13 @@ header,#lesquerdo, #ldireito
     padding: 1rem 1.15rem;
     background-color: rgb(246, 246, 246);
     cursor: pointer;
+    transition: transform ease-in-out 150ms;
 
+}
+
+.lupa:hover
+{
+    transform: scale(1.1);
 }
 
 /*CARROSSEL*/
@@ -151,10 +181,22 @@ header,#lesquerdo, #ldireito
     border-radius: 7px;
     color: white;
     margin-top: 3rem;
+    display: none;
 }
 #empresa
 {
     border-right: 1px solid #dde0e6;
+    transition: background-image, background-size, ease-in, 250ms;
+}
+
+#cliente
+{
+    transition: background-image, ease-in, 250ms;
+}
+
+#cliente button,#empresa button
+{
+    transition: display, ease-in-out 250ms;
 }
 
 #cliente, #empresa
@@ -163,7 +205,58 @@ header,#lesquerdo, #ldireito
     height: 100%;
     width: 50%;
     padding: 3rem;
+    transition: transform, ease-out 250ms;
 }
+
+#empresa p, #cliente p, #empresa h1, #cliente h1
+{
+    transition: color ease-out 250ms;
+}
+
+
+
+
+#empresa:hover,
+#cliente:hover {
+    transform: scaleY(1.05); /* Aumenta o tamanho no eixo Y */
+}
+
+#empresa:hover p,
+#empresa:hover h1,
+#cliente:hover p,
+#cliente:hover h1 {
+    color: white; /* Troca a cor do texto para branco */
+}
+
+#empresa:hover {
+    background-image: url('/image/FundoEmpresa.png'); /* Troca a imagem de fundo
+     para a empresa */
+     background-size: auto;
+}
+
+#cliente:hover {
+    background-image: url('/image/FundoCliente.png'); /* Troca a imagem de fundo para o cliente */
+}
+
+#empresa:hover button,
+#cliente:hover button {
+    display: block; /* Exibe o botão quando o mouse passa sobre o elemento */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -171,17 +264,110 @@ header,#lesquerdo, #ldireito
 #selecaoFiltros
 {
     display: flex;
-    height: 55vh;
-    background-color: #c40001;
+    height: 75vh;
+    background-color: #880101;
     justify-content: space-between;
+    align-items: center;
+    padding: 4rem 6rem;
 
 }
 
+
 #listFiltros
 {
+    display: inherit;
+    justify-content: space-between;
+    align-items: inherit;
+    height: 100%;
+}
+
+.filtroCard
+{
+    background-color: white;
+    height: 50%;
+    width: 11vw;
+    padding: 1.5rem;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin-left: 23px;
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform ease-in-out 230ms;
+    cursor: pointer;
+}
+
+.filtroCard:hover
+{
+    transform: scale(1.15);
+}
+
+.filtroCard i
+{
+    font-size: 3rem;
+    color: #c70000;
+}
+
+.bi-router
+{
+    margin-top: 2rem;
+}
+
+.filtroCard >  p
+{
+    color: black;
+
+    text-align: center;
+}
+
+#textos p
+{
+    color: #e2e2e2;
+    font-size: 1.2rem;
+    margin-left: 25px;
+}
+
+#textos h1
+{
+    color: white;
+    font-size: 2rem;
+    border-radius: 8px;
+    margin: 1rem 25px;
+}
+
+
+footer
+{
+    background-color: white;
+    color: black;
     display: flex;
-    padding-left: 6rem;
-    padding-right: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+footer img
+{
+    width: 25%;
+    cursor: pointer;
+}
+
+.cr{
+
+}
+
+#opcoes
+{
+    display: inherit;
+    justify-content: space-between;
+}
+
+#opcoes p
+{
+    margin-right:15px;
+    font-weight: bold;
+
 }
 
 

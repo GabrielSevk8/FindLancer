@@ -84,31 +84,35 @@
         <div id="selecaoFiltros">
 
             <div id="listFiltros">
-                <div class="filtro">
-                    <p>FRONT</p>
+                <div class="filtroCard">
+                    <i class="bi bi-code-slash"></i>
+                    <p>Front-End</p>
                 </div>
 
-                <div class="filtro">
-                    <p>BACK</p>
+                <div class="filtroCard">
+                    <i class="bi bi-braces"></i>
+                    <p>Back-End</p>
                 </div>
 
-                <div class="filtro">
-                    <p>FULL STACK</p>
+                <div class="filtroCard">
+                    <i class="bi bi-code-square"></i>
+                    <p>Full Stack</p>
                 </div>
 
-                <div class="filtro">
-                    <p>HARDWARE</p>
+                <div class="filtroCard">
+                    <i class="bi bi-cpu"></i>
+                    <p>Hardware</p>
                 </div>
 
-                <div class="filtro">
-                    <p>Redes de Computadores</p>
+                <div class="filtroCard">
+                    <i class="bi bi-router"></i>
+                    <p>Redes e Servidores</p>
                 </div>
 
             </div>
             <div id="textos">
-                <p>Find Lancer</p>
-                <H1>Procure vagas por areas </H1>
-                <p>Utilize nossos filtros abaixo para encontra a vaga ideal</p>
+                <H1>Procure vagas por áreas </H1>
+                <p>Utilize nossos filtros ao lado para encontrar a vaga ideal.</p>
             </div>
 
 
@@ -117,12 +121,16 @@
 
     <footer>
         <div id="logoFooter">
-            <H1>Find Lancer</H1>
+            <img src="{{ asset( 'image/Findlancer_logo2.png')}}" alt="">
         </div>
         <div id="opcoes">
-            TESTE1
-            TESTE2
-            TESTE3
+            <p>Opção 1</p>
+            <p>Opção 2</p>
+            <p>Opção 3</p>
+        </div>
+
+        <div class="cr">
+            <p>FindLancer - Todos os Direitos Reservados</p>
         </div>
 
     </footer>
