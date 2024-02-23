@@ -24,7 +24,7 @@
 </head>
 <body>
 
-    <h2>Cadastro</h2>
+    <h1>Cadastro</h1>
 
     <div class="bigbox">
         <div class="fundo" id="imgCavalo">

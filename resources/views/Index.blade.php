@@ -123,14 +123,14 @@
         <div id="logoFooter">
             <img src="{{ asset( 'image/Findlancer_logo2.png')}}" alt="">
         </div>
-        <div id="opcoes">
-            <p>Opção 1</p>
-            <p>Opção 2</p>
-            <p>Opção 3</p>
+        <div class="opcoes">
+            <p class="opcoes">Opção 1</p>
+            <p class="opcoes">Opção 2</p>
+            <p class="opcoes">Opção 3</p>
         </div>
 
         <div class="cr">
-            <p>FindLancer - Todos os Direitos Reservados</p>
+            <p> &copy; FindLancer - Todos os Direitos Reservados</p>
         </div>
 
     </footer>

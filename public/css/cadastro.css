@@ -8,7 +8,7 @@
     src: url('../fonts/RalewaySemiBold.ttf');
 }
 
-h2
+h1
 {
     color: #fff;
     font-family: titulo;
@@ -50,7 +50,6 @@ form
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .fundo
@@ -65,12 +64,15 @@ form
     height: 500px!important;
 }
 
+#imgNome{
+    margin-top: 20px;
+}
+
 .box input
 {
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 3px;
-    box-shadow: none;
 }
 
 .box label
@@ -86,6 +88,7 @@ form
     border-radius: 15px;
     height: 650px;
     width: 350px;
+    padding: 2rem 3rem;
     animation: pulse 1.5s infinite;
 }
 

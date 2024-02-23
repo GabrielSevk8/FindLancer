@@ -42,6 +42,7 @@ header
     top: 0;
     background-color: white;
     border-bottom: 2px solid black;
+    z-index: 1;
 }
 
 header h2
@@ -54,7 +55,7 @@ header h2
 header h2:hover
 {
 
-    color: #232323;
+    color: #c40001;
 }
 
 header,#lesquerdo, #ldireito
@@ -205,7 +206,7 @@ header,#lesquerdo, #ldireito
     height: 100%;
     width: 50%;
     padding: 3rem;
-    transition: transform, ease-out 250ms;
+    transition: transform, ease-out 270ms;
 }
 
 #empresa p, #cliente p, #empresa h1, #cliente h1
@@ -218,7 +219,7 @@ header,#lesquerdo, #ldireito
 
 #empresa:hover,
 #cliente:hover {
-    transform: scaleY(1.05); /* Aumenta o tamanho no eixo Y */
+    transform: scaleY(1.03); /* Aumenta o tamanho no eixo Y */
 }
 
 #empresa:hover p,
@@ -235,7 +236,9 @@ header,#lesquerdo, #ldireito
 }
 
 #cliente:hover {
-    background-image: url('/image/FundoCliente.png'); /* Troca a imagem de fundo para o cliente */
+    background-image: url('/image/FundoCliente 1.png'); /* Troca a imagem de fundo para o cliente */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #empresa:hover button,
@@ -294,7 +297,7 @@ header,#lesquerdo, #ldireito
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: transform ease-in-out 230ms;
+    transition: transform ease-in-out 280ms;
     cursor: pointer;
 }
 
@@ -349,24 +352,35 @@ footer
 
 footer img
 {
-    width: 25%;
+    width: 30%;
+    cursor: pointer;
+    transition: transform ease-in-out 250ms;
+}
+
+footer img:hover
+{
+    transform: scale(1.05);
+}
+
+
+.opcoes
+{
+    display: flex;
+    justify-content: space-between;
+    transition: color ease-in-out 250ms;
     cursor: pointer;
 }
 
-.cr{
-
-}
-
-#opcoes
+.opcoes:hover
 {
-    display: inherit;
-    justify-content: space-between;
+    color: #c40001;
 }
 
-#opcoes p
+.opcoes p
 {
     margin-right:15px;
     font-weight: bold;
+    width: 10vw;
 
 }
 
