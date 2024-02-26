@@ -52,6 +52,18 @@ form
     margin-right: auto;
 }
 
+.boxEscolha
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+#emp{
+    margin-left: 100px;
+}
+
 .fundo
 {
     height: auto;

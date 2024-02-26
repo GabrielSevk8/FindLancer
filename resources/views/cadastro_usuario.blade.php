@@ -47,11 +47,6 @@
                 </div>
 
                 <div class="box">
-                    <label for="telefone">Telefone:</label>
-                    <input type="text" id="telefone" name="telefone" required>
-                </div>
-
-                <div class="box">
                     <label for="senha">Senha:</label>
                     <input type="password" id="senha" name="senha" required>
                 </div>
@@ -59,6 +54,13 @@
                 <div class="box">
                     <label for="confirmarSenha">Confirme sua Senha:</label>
                     <input type="password" id="confirmarSenha" name="confirmarSenha" required>
+                </div>
+
+                <div class="boxEscolha">
+                    <input type="radio" id="free" name="escolha" value="Freelancer">
+                    <label for="free">Freelancer</label><br>
+                    <input type="radio" id="emp" name="escolha" value="Empresa">
+                    <label for="emp">Empresa</label><br>
                 </div>
 
                 <div class="box" id="btnCad">

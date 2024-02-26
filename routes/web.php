@@ -32,3 +32,8 @@ Route::get('/cadastro/empresa', function () {
 Route::get('/usuario', function () {
     return view('usuario');
 });
+
+Route::get('/home/atualizaCadastro', function()
+{
+    return view('atualiza_cadastro');
+});
