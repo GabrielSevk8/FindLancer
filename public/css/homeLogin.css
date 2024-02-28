@@ -1,0 +1,157 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.12rem;
+    box-sizing: border-box;
+
+}
+
+
+
+#logo
+{
+    width: 20%;
+    cursor: pointer;
+    background-color: none;
+    transition: transform ease-in-out 150ms;
+}
+
+#logo:hover
+{
+    transform: scale(1.1);
+}
+
+#banner
+{
+    width: 100%;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: 2px solid black;
+    z-index: 1;
+}
+
+header h2
+{
+    color: #5c6066;
+    cursor: pointer;
+    transition: color ease-in-out 100ms;
+}
+
+header h2:hover
+{
+
+    color: #c40001;
+}
+
+header,#lesquerdo, #ldireito
+{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+
+}
+
+#lesquerdo, #ldireito
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#lesquerdo
+{
+    width: 50%;
+}
+
+#ldireito
+{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+#login
+{
+    margin-left: 3rem;
+    background-color: #212121;
+    height: 100%;
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-bottom: 1px solid black;
+    transition: background-color ease-in-out 150ms;
+}
+
+#login:hover
+{
+    background-color: #860000;
+}
+
+
+.lupa
+{
+    font-size: 1.7rem;
+    border-radius: 100px;
+    padding: 1rem 1.15rem;
+    background-color: rgb(246, 246, 246);
+    cursor: pointer;
+    transition: transform ease-in-out 150ms;
+
+}
+
+.lupa:hover
+{
+    transform: scale(1.1);
+}
+
+/* Hero*/
+
+#hero
+{
+    background-color: #c40001;
+    display: flex;
+    height: 50vh;
+    padding: 3% 6%;
+}
+
+#hero > #lesquerdo
+{
+    display: inherit;
+    flex-direction: column;
+    color: white;
+
+    line-height: 1.8;
+
+    align-items: flex-start;
+    width: 60%;
+}
+
+#hero > #lesquerdo h1
+{
+    font-size: 1.6rem;
+}
+#containerPesquisa
+{
+    background-color: white;
+    color: black;
+    padding: 2.5%;
+}
+
+
+
+

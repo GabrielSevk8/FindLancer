@@ -1,12 +1,27 @@
 *
 {
-    background: #2A2B29;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
-.ImagemPerfil
+.conteiner
 {
+    width: 900px;
+    height: 800px;
     background-color: #fff;
-    width:"10";
-    height:"10";
-    border-radius:"10";
+    align-self: center;
+}
+
+.imgPer
+{
+    background-color: #333;
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    position: absolute;
+    margin-bottom: 675px;
+    margin-left: 20px;
 }

@@ -37,3 +37,8 @@ Route::get('/home/atualizaCadastro', function()
 {
     return view('atualiza_cadastro');
 });
+
+Route::get('/homeLogin', function()
+{
+    return view('home_login');
+});
