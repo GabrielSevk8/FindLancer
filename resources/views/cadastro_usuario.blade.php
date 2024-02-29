@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset( 'css/cadastro.css' ) }}">
     <title>Cadastro</title>
+    <link rel="shortcut icon" href="{{ asset('image/Findlancer_logo3.png') }}">
 </head>
 <body>
-<script>
+    <script>
         function validarSenha() {
             var senha = document.getElementById("senha").value;
             var confirmarSenha = document.getElementById("confirmarSenha").value;
@@ -58,10 +59,12 @@
 
                 <div class="boxEscolha">
                     <input type="radio" id="free" name="escolha" value="Freelancer">
-                    <label for="free">Freelancer</label><br>
+                    <label class="free" for="free">Freelancer</label>
                     <input type="radio" id="emp" name="escolha" value="Empresa">
-                    <label for="emp">Empresa</label><br>
+                    <label class="emp" for="emp">Empresa</label>
                 </div>
+
+
 
                 <div class="box" id="btnCad">
                     <button type="submit">Cadastrar</button>

@@ -8,7 +8,7 @@
     src: url('../fonts/RalewaySemiBold.ttf');
 }
 
-h1
+h2
 {
     color: #fff;
     font-family: titulo;
@@ -104,8 +104,9 @@ input
     flex-direction: column;
     background-color: #fff;
     border-radius: 15px;
-    height: 600px;
+    height: 1300px;
     width: 350px;
+    margin-bottom: 20px;
     padding: 2rem 3rem;
     animation: pulse 1.5s infinite;
 }
