@@ -127,7 +127,8 @@ input
     color: #c40001;
 }
 
-input[type='radio']:after{
+input[type='radio']:after
+{
     width: 15px;
     height: 15px;
     border-radius: 15px;
@@ -141,7 +142,8 @@ input[type='radio']:after{
     border: 2px solid white;
 }
 
-input[type='radio']:checked:after{
+input[type='radio']:checked:after
+{
     width: 15px;
     height: 15px;
     border-radius: 15px;

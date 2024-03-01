@@ -1,10 +1,6 @@
 *
 {
-    background: #000;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
 }
 
 .conteiner
@@ -13,6 +9,26 @@
     height: 800px;
     background-color: #fff;
     align-self: center;
+    border-radius: 15px;
+}
+
+.box1
+{
+    background: #fff;
+    flex-direction: column;
+}
+
+.box1row2
+{
+    background-color: #333;
+}
+
+h1
+{
+    background-color: #333;
+    margin-top: 20px;
+    margin-left: 140px;
+    margin-right: 500px;
 }
 
 .imgPer
@@ -22,6 +38,7 @@
     height: 90px;
     border-radius: 15px;
     position: absolute;
-    margin-bottom: 675px;
+    margin-top: 20px;
     margin-left: 20px;
+
 }
