@@ -31,7 +31,7 @@
 
                         <div class="b">
                             <div>
-                                <a class="links" href="#">Criar uma conta</a>
+                                <a class="links" href="/cadastro">Criar uma conta</a>
                             </div>
                             <div>
                                 <a class="links" href="#">Esqueci a senha</a>

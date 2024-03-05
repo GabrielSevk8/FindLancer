@@ -45,7 +45,7 @@
                         </form>
 
                         <button id="botaoPesquisa">
-                            i class="bi bi-search "></i><h1 id="txtBotao">Procurar Vagas</h1>
+                            <i class="bi bi-search "></i><h1 id="txtBotao">Procurar Vagas</h1>
                         </button>
                     </div>
                 </div>
@@ -60,51 +60,68 @@
 
 
         <div id="containerVagas">
-            <h1>Vagas Recomendadas</h1>
+
+
             <div id="vagas">
-                <div id="vaga1">
-                    Teste Vaga1
+                <div class="vaga">
+                    <h1 class="tituloVaga">Titulo Vaga</h1>
+                    <h1>Nome empresa</h1>
+                    <p>De R$1.000,00 a R$ 2.000,00</p>
+                    <p><strong>1</strong> Vaga (S)</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsum ducimus praesentium optio ipsa recusandae ipsam. Vel, vitae perspiciatis</p>
+                    <button>Ver Vaga Completa</button>
                 </div>
 
-                <div id="vaga2">
-                    Teste Vaga2
+                <div class="vaga">
+                <h1 class="tituloVaga">Titulo Vaga</h1>
+                    <h1>Nome empresa</h1>
+                    <p>De R$1.000,00 a R$ 2.000,00</p>
+                    <p><strong>1</strong> Vaga (S)</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsum ducimus praesentium optio ipsa recusandae ipsam. Vel, vitae perspiciatis</p>
+                    <button>Ver Vaga Completa</button>
                 </div>
+            </div>
+
+            <div id="textVagasRecomendadas">
+                <h1>Vagas
+                    <span id="recomendado">Recomendadas</span>
+                </h1>
+                <p>Veja ao lado as <span id="barra">vagas que selecionamos para você!</span> </p>
             </div>
         </div>
 
 
-        <div id="containerPassos">
-            <h1>3 passos rumo à sua entrevista de emprego</h1>
-            <div id="imgs">
-                <div id="img1">
-                    <h1>1 Passo: Crie sua Conta</h1>
-                    <p>Em menos de 3 minutos, você
-                        Cria a sua conta aqui com a gente
-                    </p>
-                </div>
 
-                <div id="img2">
-                    <h1>2 Passo: Hora do CV</h1>
-                    <p>Cadastre seu currículo e apareça
-                        para as empresas.
-                    </p>
-                </div>
-
-                <div id="img3">
-                    <h1>3 Passo: Candidate-se</h1>
-                    <p>Busque as vagas no seu perfil e
-                        Candidate-se!
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
 
         <div id="containerClientes">
-            <h1>O que estão dizendo da FindLancer</h1>
+            <h1 id="tituloClientes">O que estão dizendo da FindLancer?</h1>
             <div id="avaliacoes">
+                <div class="avaliacao">
+                    <img src="{{ asset( 'image/iconGuest.png')}}" alt="">
+                    <div class="linhaSuperiorAvaliacao">
+                        <h1>Cliente 1</h1>
+                    </div>
 
+
+                </div>
+
+                <div class="avaliacao">
+                    <img src="{{ asset( 'image/iconGuest.png')}}" alt="">
+                    <div class="linhaSuperiorAvaliacao">
+                        <h1>Cliente 1</h1>
+                    </div>
+
+
+                </div>
+
+                <div class="avaliacao">
+                    <img src="{{ asset( 'image/iconGuest.png')}}" alt="">
+                    <div class="linhaSuperiorAvaliacao">
+                        <h1>Cliente 1</h1>
+                    </div>
+
+
+                </div>
             </div>
         </div>
     </main>

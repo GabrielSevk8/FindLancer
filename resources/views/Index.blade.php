@@ -13,8 +13,6 @@
             font-family: test;
         src: url("font/Palatino Font.ttf");
         }
-
-
         {
             font-family: test;
         }
@@ -36,9 +34,11 @@
 
         <div id="ldireito">
             <i class="bi bi-search lupa "></i>
-            <div id="login">
-                Acessar sua Conta
-            </div>
+            <a href="/login" class="login">
+                <div>
+                    Acesse sua Conta
+                </div>
+            </a>
         </div>
     </header>
 
