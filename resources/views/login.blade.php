@@ -13,7 +13,14 @@
         <img class="logo" src={{ asset('image/Findlancer_logo.jpg') }} alt="">
 
         <div class="movi">
-            <form action="">
+
+
+            <form action="/valida" method="POST">
+                @csrf
+
+                @if(session("error")!='')
+                    <h2>{{ session("error") }}</h2>
+                @endif
 
                 <h1>Login</h1>
 
@@ -40,7 +47,7 @@
                         </div>
 
                         <div class="buttonEntrar">
-                            <button class="entrar">Login</button>
+                            <button type="submit" class="entrar">Login</button>
                         </div>
 
                         <div >

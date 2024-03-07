@@ -70,7 +70,7 @@ header h2:hover
     color: #c40001;
 }
 
-header,#lesquerdo, #ldireito
+header,#lesquerdoHead, #ldireitoHead
 {
     display: flex;
     align-items: center;
@@ -78,32 +78,38 @@ header,#lesquerdo, #ldireito
 
 }
 
-#lesquerdo, #ldireito
+#lesquerdoHead, #ldireitoHead
 {
     display: flex;
     justify-content: space-between;
 
 }
 
-#lesquerdo
+#lesquerdoHead
 {
     width: 50%;
 }
 
-#ldireito
+#lesquerdoHead h1
 {
-    width: 30%;
-    display: flex;
-    justify-content: flex-end;
+    font-family: titulo;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#ldireitoHead
+{
+    width: 50%;
+    height: 100px;
 }
 
 
 #login
 {
-    margin-left: 3rem;
+    margin-left: 15px;
     background-color: #212121;
-    height: 100%;
-    width: 55%;
+    height: 95%;
+    width: 38%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,21 +125,31 @@ header,#lesquerdo, #ldireito
     background-color: #860000;
 }
 
-
-.lupa
+#ldireito img
 {
-    font-size: 1.7rem;
-    border-radius: 100px;
-    padding: 1rem 1.15rem;
-    background-color: rgb(246, 246, 246);
-    cursor: pointer;
-    transition: transform ease-in-out 150ms;
-
+    height: 444.95px;
+    width: 600px;
+    margin-left: 0px !important;
 }
 
-.lupa:hover
+#ldireitoHead form
 {
-    transform: scale(1.1);
+    display: flex;
+    align-items: center;
+    padding: 0 2%;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 55%;
+    margin:  0 2.5rem;
+}
+
+.pesquisa
+{
+    display: flex;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 1rem;
 }
 
 /* Hero*/
@@ -143,13 +159,11 @@ header,#lesquerdo, #ldireito
     background-color: #af0000;
     display: flex;
     height: 48vh;
-    padding: 3% 6%;
 }
 #hero i
 {
     font-size: 1.25rem;
     margin-right: 10px;
-
 }
 
 #hero > #lesquerdo
@@ -160,6 +174,7 @@ header,#lesquerdo, #ldireito
     line-height: 1.5;
     align-items: flex-start;
     width: 63%;
+    padding: 3% 6%;
 }
 
 #titulo
@@ -305,6 +320,18 @@ header,#lesquerdo, #ldireito
     border: none;
 }
 
+#refresh
+{
+    margin-top: 5%;
+    border: none;
+    padding: 5%;
+    width: 90%;
+    border-radius: 15px;
+    font-size: 2rem;
+    background-color: #860000;
+    color: white;
+}
+
 /* Avaliações */
 
 #containerClientes
@@ -329,8 +356,7 @@ header,#lesquerdo, #ldireito
 
 .avaliacao
 {
-    display: flex;
-    justify-content: space-between;
+
     height: 30vh;
     width:30vw;
     border: #7a7a7a solid 2px;
@@ -338,17 +364,93 @@ header,#lesquerdo, #ldireito
     margin-top: 4rem;
     background-color: white;
     color: #860000;
-    padding: 2.5%;
+    padding:  1% 2.5%;
 
 }
 
 
-.avaliacao img
+.SuperiorAvaliacao
+{
+    margin: 2% 0;
+    padding: 0 2%;
+    display: flex;
+
+}
+
+.clientes
+{
+
+}
+
+.textoAvaliacao
+{
+    display: inherit;
+flex-direction: row;
+}
+
+.stars
+{
+    width: 5.5rem;
+    height: 70%;
+}
+
+.avaliacao .guest
 {
     width: 3.5rem;
     height: 3.5rem;
 }
 
 
+
+#textoAvaliacao
+{
+    display: inherit;
+    flex-direction: column;
+}
+
+
+footer
+{
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+footer img
+{
+    width: 30%;
+    cursor: pointer;
+    transition: transform ease-in-out 250ms;
+}
+
+footer img:hover
+{
+    transform: scale(1.05);
+}
+
+
+.opcoes
+{
+    display: flex;
+    justify-content: space-between;
+    transition: color ease-in-out 250ms;
+    cursor: pointer;
+}
+
+.opcoes:hover
+{
+    color: #c40001;
+}
+
+.opcoes p
+{
+    margin-right:15px;
+    font-weight: bold;
+    width: 10vw;
+
+}
 
 

@@ -10,8 +10,8 @@
 </head>
 <body>
     <header>
-        <div id="lesquerdo">
-            <img src="{{ asset('image/Findlancer_logo3.png') }}" alt="" id="logo">
+        <div id="lesquerdoHead">
+            <h1>Findlancer</h1>
             <h2>Opção 1</h2>
             <h2>Opção 2</h2>
             <h2>Opção 3</h2>
@@ -22,8 +22,13 @@
 
         </div>
 
-        <div id="ldireito">
-            <i class="bi bi-search lupa "></i>
+        <div id="ldireitoHead">
+            <form action="">
+                <i class="bi bi-search lupa "></i>
+                <input type="text" placeholder="Pesquise Vagas Aqui" class="pesquisa">
+
+            </form>
+
             <div id="login">
                 Bem vindo, Usuário
             </div>
@@ -45,6 +50,7 @@
                         </form>
 
                         <button id="botaoPesquisa">
+
                             <i class="bi bi-search "></i><h1 id="txtBotao">Procurar Vagas</h1>
                         </button>
                     </div>
@@ -52,7 +58,7 @@
             </div>
 
             <div id="ldireito">
-                <h1>DIREITO</h1>
+                <img src="{{ asset( "image/Findlancer_logo3.png")}}" alt="">
             </div>
         </div>
 
@@ -87,6 +93,8 @@
                     <span id="recomendado">Recomendadas</span>
                 </h1>
                 <p>Veja ao lado as <span id="barra">vagas que selecionamos para você!</span> </p>
+
+                <button id="refresh"><i class="bi bi-arrow-clockwise">Carregar Novas Vagas</i></button>
             </div>
         </div>
 
@@ -97,34 +105,74 @@
             <h1 id="tituloClientes">O que estão dizendo da FindLancer?</h1>
             <div id="avaliacoes">
                 <div class="avaliacao">
-                    <img src="{{ asset( 'image/iconGuest.png')}}" alt="">
-                    <div class="linhaSuperiorAvaliacao">
-                        <h1>Cliente 1</h1>
+                    <div class="SuperiorAvaliacao">
+                        <img src="{{ asset( 'image/iconGuest.png')}}" alt="" class="guest">
+                        <div class="clientes">
+                            <h1>Cliente 1</h1>
+                            <img src="{{ asset( 'image/5stars.png')}}" alt="" class="stars">
+                        </div>
+
                     </div>
+
+                    <div class="textoAvaliacao">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem inventore aliquam et quas rem reiciendis quaerat, error </p>
+                    </div>
+
+
 
 
                 </div>
 
                 <div class="avaliacao">
-                    <img src="{{ asset( 'image/iconGuest.png')}}" alt="">
-                    <div class="linhaSuperiorAvaliacao">
-                        <h1>Cliente 1</h1>
+                    <div class="SuperiorAvaliacao">
+                        <img src="{{ asset( 'image/iconGuest.png')}}" alt="" class="guest">
+                        <div class="clientes">
+                            <h1>Cliente 1</h1>
+                            <img src="{{ asset( 'image/5stars.png')}}" alt="" class="stars">
+                        </div>
+
                     </div>
 
+                    <div class="textoAvaliacao">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem inventore aliquam et quas rem reiciendis quaerat, error </p>
+                    </div>
 
                 </div>
 
                 <div class="avaliacao">
-                    <img src="{{ asset( 'image/iconGuest.png')}}" alt="">
-                    <div class="linhaSuperiorAvaliacao">
-                        <h1>Cliente 1</h1>
+                    <div class="SuperiorAvaliacao">
+                        <img src="{{ asset( 'image/iconGuest.png')}}" alt="" class="guest">
+                        <div class="clientes">
+                            <h1>Cliente 1</h1>
+                            <img src="{{ asset( 'image/5stars.png')}}" alt="" class="stars">
+                        </div>
+
                     </div>
 
-
-                </div>
+                    <div class="textoAvaliacao">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem inventore aliquam et quas rem reiciendis quaerat, error </p>
+                    </div>
             </div>
         </div>
+
+
     </main>
+
+    <footer>
+        <div id="logoFooter">
+            <img src="{{ asset( 'image/Findlancer_logo2.png')}}" alt="">
+        </div>
+        <div class="opcoes">
+            <p class="opcoes">Opção 1</p>
+            <p class="opcoes">Opção 2</p>
+            <p class="opcoes">Opção 3</p>
+        </div>
+
+        <div class="cr">
+            <p> &copy; FindLancer - Todos os Direitos Reservados</p>
+        </div>
+
+    </footer>
 
 
 </body>

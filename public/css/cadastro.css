@@ -157,6 +157,14 @@ input[type='radio']:checked:after
     border: 2px solid white;
 }
 
+footer
+{
+    color: white;
+    text-align: center;
+    font-family: texto;
+    padding-top: 110px;
+}
+
 .free{
     padding-left: 1px;
 }

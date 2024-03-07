@@ -92,6 +92,9 @@
 
     </form>
 
+    <footer>
+        <p> &copy; FindLancer - Todos os Direitos Reservados</p>
+    </footer>
 
 </body>
 </html>

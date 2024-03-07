@@ -3,14 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Usuario;
+use App\Models\User;
 
-class CadastroController extends Controller
+class Usuario1Controller extends Controller
 {
     public function cadastrar(Request $request)
     {
         // Validar os dados recebidos, etc.
 
+        /*
         if ($tipoUsuario === 'free')
         {
         // Criar um novo objeto de usuário com os dados do formulário
@@ -32,5 +33,16 @@ class CadastroController extends Controller
 
             $usuario->save();
         }
+        */
+
+        $user = new User();
+        $user->nome = "nome";
+        $user->email = "teste@teste.com";
+        $user->password = bcrypt( "1234" );
+        $user->save();
+
+        return redirect('/');
+
     }
+
 }
