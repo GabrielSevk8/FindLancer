@@ -10,11 +10,7 @@
 <body>
 
     <div class="container">
-        <img class="logo" src={{ asset('image/Findlancer_logo.jpg') }} alt="">
-
         <div class="movi">
-
-
             <form action="/valida" method="POST">
                 @csrf
 
@@ -63,11 +59,8 @@
                             <button class="token"><img class="icon3" src="{{ asset('image/github.png') }}" alt=""> <span>Entre com LinkedIn</span></button>
 
                         </div>
-
                     </div>
-
             </form>
-
         </div>
     </div>
 

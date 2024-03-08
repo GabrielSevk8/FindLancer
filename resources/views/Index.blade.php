@@ -26,10 +26,6 @@
             <h2>Opção 2</h2>
             <h2>Opção 3</h2>
             <h2>Opção 4</h2>
-
-
-
-
         </div>
 
         <div id="ldireito">

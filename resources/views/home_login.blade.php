@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <div id="lesquerdoHead">
+        <div id="lesquerdoHead" class="ladoHead">
             <h1>Findlancer</h1>
             <h2>Opção 1</h2>
             <h2>Opção 2</h2>
@@ -22,7 +22,7 @@
 
         </div>
 
-        <div id="ldireitoHead">
+        <div id="ldireitoHead" class="ladoHead">
             <form action="">
                 <i class="bi bi-search lupa "></i>
                 <input type="text" placeholder="Pesquise Vagas Aqui" class="pesquisa">
@@ -37,8 +37,8 @@
 
 
     <main>
-        <div id="hero">
-            <div id="lesquerdo">
+        <section class="hero">
+            <div id="lesquerdo" class="ladoHero">
                 <h1 id="titulo">Explore o primeiro site de freelancers especializado em tech do Brasil</h1>
                 <p>Faça uma pesquisa e encontre as melhores oportunidades para você</p>
                 <div id="containerPesquisa">
@@ -57,10 +57,10 @@
                 </div>
             </div>
 
-            <div id="ldireito">
-                <img src="{{ asset( "image/Findlancer_logo3.png")}}" alt="">
+            <div id="ldireito" class="ladoHero">
+                <img src="{{ asset( 'image/Findlancer_logo4.png')}}" alt="">
             </div>
-        </div>
+        </section>
 
 
 
