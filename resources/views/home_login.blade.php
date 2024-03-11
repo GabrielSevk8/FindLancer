@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="{{('css/homeLogin.css')}}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
@@ -30,7 +30,7 @@
             </form>
 
             <div id="login">
-                Bem vindo, Usuário
+                *Usuario*
             </div>
         </div>
     </header>
@@ -70,7 +70,7 @@
 
             <div id="vagas">
                 <div class="vaga">
-                    <h1 class="tituloVaga">Titulo Vaga</h1>
+                    <h1 class="tituloVaga">{vaga.titulo}</h1>
                     <h1>Nome empresa</h1>
                     <p>De R$1.000,00 a R$ 2.000,00</p>
                     <p><strong>1</strong> Vaga (S)</p>

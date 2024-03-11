@@ -1,9 +1,20 @@
 
+
+@font-face{
+    font-family: titulo;
+    src: url('../fonts/CinzelRegular.ttf');
+}
+
+@font-face{
+    font-family: texto;
+    src: url('../fonts/RalewaySemiBold.ttf');
+}
+
 *
 {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: texto;
     font-size: 1.12rem;
     box-sizing: border-box;
 
@@ -11,94 +22,84 @@
 
 p
 {
-    color: #5c6066;
+    color: #282828;
     line-height: 1.7;
 }
 
-#logo
-{
-    width: 20%;
-    cursor: pointer;
-    background-color: none;
-    transition: transform ease-in-out 150ms;
-}
 
-#logo:hover
-{
-    transform: scale(1.1);
-}
 
-#banner
-{
-    width: 100%;
-}
+
 
 header
 {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    padding: 0.5rem 0;
     padding-left: 2rem;
     position: sticky;
     top: 0;
     background-color: white;
-    border-bottom: 2px solid black;
     z-index: 1;
 }
 
 header h2
 {
-    color: #5c6066;
+    color: #282828;
     cursor: pointer;
-    transition: color ease-in-out 100ms;
+    transition: transform ease-in-out 220ms;
 }
 
 header h2:hover
 {
-
+    transform: scale(1.1);
     color: #c40001;
 }
 
-header,#lesquerdo, #ldireito
+.ladoHead
 {
-    display: flex;
+    display: inherit;
     align-items: center;
-    height: 10vh;
-
-}
-
-#lesquerdo, #ldireito
-{
-    display: flex;
     justify-content: space-between;
-
-}
-
-#lesquerdo
-{
+    height: 10vh;
     width: 50%;
 }
 
-#ldireito
+.findNome
 {
-    width: 30%;
-    display: flex;
-    justify-content: flex-end;
+    font-family: titulo;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform ease-in-out 300ms;
+    margin-right: 2rem;
+}
+
+.findNome:hover
+{
+    transform: scale(1.1);
 }
 
 
+#ldireito
+{
+    display: inherit;
+    justify-content: flex-end;
+}
+
 .login
 {
+    position: absolute;
+    top: 0;
     margin-left: 3rem;
     background-color: #c40001;
-    height: 100%;
-    width: 55%;
-    display: flex;
+    height: 101%;
+    width: 20%;
+    display: inherit;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     color: white;
     border: none;
-    border-bottom: 1px solid black;
     transition: background-color ease-in-out 150ms;
     text-decoration: none;
 }
@@ -109,36 +110,21 @@ header,#lesquerdo, #ldireito
 }
 
 
-.lupa
-{
-    font-size: 1.7rem;
-    border-radius: 100px;
-    padding: 1rem 1.15rem;
-    background-color: rgb(246, 246, 246);
-    cursor: pointer;
-    transition: transform ease-in-out 150ms;
-
-}
-
-.lupa:hover
-{
-    transform: scale(1.1);
-}
 
 /*CARROSSEL*/
 
-#carrossel
-{
+#imgHero {
     cursor: pointer;
-    background-image: url("/image/Banner1.jpg");
-    background-size: cover;
-    height: 70vh;
-    width: 100%;
+    background-image: url("../image/Banner1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; /* ou outra posição desejada */
     display: block;
     z-index: -1;
-
+    height: 75vh; /* Use 'vh' para 100% da altura da viewport */
+    width: 100vw;
+    z-index: -1;
 }
-
 
 #criacaoContas
 {
@@ -161,10 +147,10 @@ header,#lesquerdo, #ldireito
     padding: 4rem;
     padding-bottom: 2rem;
     top: 10%;
-    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5),
-                -15px -15px 15px rgba(0, 0, 0, 0.5),
-                -15px 15px 15px rgba(0, 0, 0, 0.5),
-                15px -15px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 15px 0px 15px rgba(0, 0, 0, 0.5),
+                -15px 0px 15px rgba(0, 0, 0, 0.5),
+                -15px 0px 15px rgba(0, 0, 0, 0.5),
+                15px 0px 15px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -182,7 +168,7 @@ header,#lesquerdo, #ldireito
     padding: 1rem;
     border-radius: 7px;
     color: white;
-    margin-top: 3rem;
+    margin-top: 1rem;
     display: none;
 }
 #empresa
@@ -249,33 +235,16 @@ header,#lesquerdo, #ldireito
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #selecaoFiltros
 {
     display: flex;
-    height: 75vh;
+    height: 55vh;
     background-color: #880101;
     justify-content: space-between;
     align-items: center;
-    padding: 4rem 6rem;
+    padding: 3% 1%;
 
 }
-
 
 #listFiltros
 {
@@ -288,9 +257,9 @@ header,#lesquerdo, #ldireito
 .filtroCard
 {
     background-color: white;
-    height: 50%;
+    height: 62%;
     width: 11vw;
-    padding: 1.5rem;
+    padding: 2rem;
     border: 2px solid black;
     border-radius: 8px;
     margin-left: 23px;
@@ -313,10 +282,6 @@ header,#lesquerdo, #ldireito
     color: #c70000;
 }
 
-.bi-router
-{
-    margin-top: 2rem;
-}
 
 .filtroCard >  p
 {

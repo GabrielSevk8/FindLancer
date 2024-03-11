@@ -20,16 +20,15 @@
 </head>
 <body>
     <header>
-        <div id="lesquerdo">
-            <img src="{{ asset('image/Findlancer_logo3.png') }}" alt="" id="logo">
+        <div id="lesquerdo" class="ladoHead">
+            <h1 class="findNome">FindLancer</h1>
             <h2>Opção 1</h2>
             <h2>Opção 2</h2>
             <h2>Opção 3</h2>
             <h2>Opção 4</h2>
         </div>
 
-        <div id="ldireito">
-            <i class="bi bi-search lupa "></i>
+        <div id="ldireito" class="ladoHead">
             <a href="/login" class="login">
                 <div>
                     Acesse sua Conta
@@ -38,18 +37,13 @@
         </div>
     </header>
 
-
-
-
-
-
-
-
-
     <main>
-        <div id="carrossel">
-            <img src="{{ asset('image/Banner1.png') }}" alt="" id="banner">
+        <div>
+            <div id="imgHero">
+
+            </div>
         </div>
+
 
         <div id="criacaoContas">
             <div id="fundoContas">
@@ -102,7 +96,7 @@
 
                 <div class="filtroCard">
                     <i class="bi bi-router"></i>
-                    <p>Redes e Servidores</p>
+                    <p>Redes</p>
                 </div>
 
             </div>
@@ -117,7 +111,7 @@
 
     <footer>
         <div id="logoFooter">
-            <img src="{{ asset( 'image/Findlancer_logo2.png')}}" alt="">
+            <h1 class="findNome">FindLancer</h1>
         </div>
         <div class="opcoes">
             <p class="opcoes">Opção 1</p>
@@ -126,7 +120,7 @@
         </div>
 
         <div class="cr">
-            <p> &copy; FindLancer - Todos os Direitos Reservados</p>
+            <p> &copy; FindLancer - Direitos Reservados</p>
         </div>
 
     </footer>

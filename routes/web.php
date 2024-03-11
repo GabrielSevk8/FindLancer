@@ -41,7 +41,7 @@ Route::get('/cadastro', function ()
 Route::get('/usuario', function ()
 {
     return view('usuario');
-})->middleware('auth');
+});
 
 //rota: atualiza cadastro
 Route::get('/home/atualizaCadastro', function()
