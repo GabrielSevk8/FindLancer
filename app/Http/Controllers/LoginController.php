@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\Usuario;
+use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 use illuminate\Support\Facades\Auth;
 
-class LoginControl extends Controller
+class LoginController extends Controller
 {
 
     public function Login(Request $dadosLogin)
@@ -16,23 +17,25 @@ class LoginControl extends Controller
 
         if( Auth::attempt( $credenciais))
         {
-            return redirect() -> intented("/painel");
+            return redirect() -> intended("home_login");
         }
         else
         {
             return back()->with( "error", "Usuário ou senha incorretos!");
         }
 
+        
+
 
     }
 
-    public function sair(Request $dadosLogin)
+    public function sair()
     {
         Auth::logout();
 
-       // $sessao->session->invalidate();
+       //$sessao->session->invalidate();
 
-       // $sessao->session->regenerateToken();
+       //$sessao->session->regenerateToken();
 
         return redirect("login");
     }

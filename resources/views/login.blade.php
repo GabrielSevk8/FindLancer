@@ -14,9 +14,7 @@
             <form action="/valida" method="POST">
                 @csrf
 
-                @if(session("error")!='')
-                    <h2>{{ session("error") }}</h2>
-                @endif
+
 
                 <h1>Login</h1>
 
@@ -24,12 +22,12 @@
 
                         <div class="entraDados">
                             <label for="email">E-mail</label>
-                            <input type="email" class="form-control" id="email" placeholder="" required>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="" required>
                         </div>
 
                         <div class="entraDados">
                             <label for="senha">Senha</label>
-                            <input type="password" class="form-control" id="senha" placeholder="">
+                            <input type="password" class="form-control" name="password" id="senha" placeholder="">
                         </div>
 
                         <div class="b">
@@ -41,6 +39,12 @@
                             </div>
 
                         </div>
+
+                        @if(session("error")!='')
+                            <div class="error">
+                                <p>{{ session("error") }}</p>
+                            </div>
+                        @endif
 
                         <div class="buttonEntrar">
                             <button type="submit" class="entrar">Login</button>

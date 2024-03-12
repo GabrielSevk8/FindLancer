@@ -48,6 +48,8 @@ body{
 
 }
 
+
+
 form
 {
     display: flex;
@@ -99,9 +101,21 @@ input
     color: #c40001
 }
 
+.error{
+    font-family: texto;
+    color: #c40001;
+    display: flex;
+    justify-content: center;
+}
+
+.error p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .buttonEntrar
 {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: 50px;
 }
 

@@ -1,8 +1,6 @@
 <?php
 
-use App\Http\Controllers\LoginController;
-use App\Http\Controllers\Usuario1Controller;
-use App\Http\Controllers\UsuarioController;# importando a classe Controller
+use App\Http\Controllers\LoginController;# importando a classe Controller
 use Illuminate\Support\Facades\Route;
 
 
@@ -32,29 +30,18 @@ Route::get('/login', function ()
 
 Route::post('/valida', [LoginController::class, 'Login'])->name('valida');
 
+Route::get('/logout', [LoginController::class,'sair'])->name('logout');
+
 //rota: Cadastro
 Route::get('/cadastro', function ()
 {
     return view('cadastro');
 });
 
-Route::get('/usuario', function ()
-{
-    return view('usuario');
-});
-
-//rota: atualiza cadastro
-Route::get('/home/atualizaCadastro', function()
-{
-    return view('atualiza_cadastro');
-});
-
 //rota: Home/Perfil
-Route::get('/homeLogin', function()
+Route::get('/home_login', function()
 {
     return view('home_login');
-});
-
-route::get('/teste', [Usuario1Controller::class, 'cadastrar']);
+})->middleware('auth');
 
 /*)->middleware('auth')->name('homeLogin');*/

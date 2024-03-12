@@ -21,7 +21,7 @@ class UsuariosTableSeeder extends Seeder
         for( $i = 0; $i < 15; $i++ )
         {
             $user = User::create([
-                'name'=> $faker->name,
+                'nome'=> $faker->name,
                 'email'=> $faker->unique()->email,
                 'password'=> bcrypt('1234'),
             ]);
