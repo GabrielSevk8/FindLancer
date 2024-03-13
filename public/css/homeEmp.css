@@ -73,10 +73,15 @@ header h2:hover
     width: 50%;
 }
 
-#lesquerdoHead, #ldireitoHead
+#lesquerdoHead
 {
     display: flex;
     justify-content: space-between;
+}
+
+#ldireitoHead{
+    display: flex;
+    justify-content: flex-end;
 }
 
 #ldireitoHead form
@@ -310,18 +315,13 @@ header h2:hover
 #refresh
 {
     margin-top: 5%;
-    margin-left: 10%;
     border: none;
     padding: 5%;
-    width: 70%;
+    width: 90%;
     border-radius: 15px;
+    font-size: 2rem;
     background-color: #860000;
     color: white;
-}
-
-.bi-arrow-clockwise
-{
-    font-size: 1.5rem;
 }
 
 /* Avaliações */
@@ -440,5 +440,3 @@ footer img:hover
     width: 10vw;
 
 }
-
-

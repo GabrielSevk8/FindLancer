@@ -4,33 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
-    <link rel="stylesheet" href="{{('css/homeLogin.css')}}">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{('css/homeEmp.css')}}">
 </head>
 <body>
     <header>
         <div id="lesquerdoHead" class="ladoHead">
             <h1>Findlancer</h1>
-            <h2>Opção 1</h2>
-            <h2>Opção 2</h2>
-            <h2>Opção 3</h2>
-            <h2>Opção 4</h2>
-
-
-
 
         </div>
 
         <div id="ldireitoHead" class="ladoHead">
-            <form action="">
-                <i class="bi bi-search lupa "></i>
-                <input type="text" placeholder="Pesquise Vagas Aqui" class="pesquisa">
 
-            </form>
-
-            <div id="login" class="sidenav">
-                *Usuario*
+            <div id="login">
+                *Empresa*
             </div>
         </div>
     </header>
@@ -75,7 +62,7 @@
                     <p>De R$1.000,00 a R$ 2.000,00</p>
                     <p><strong>1</strong> Vaga (S)</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsum ducimus praesentium optio ipsa recusandae ipsam. Vel, vitae perspiciatis</p>
-                    <button>Vaga Completa</button>
+                    <button>Ver Vaga Completa</button>
                 </div>
 
                 <div class="vaga">
@@ -84,7 +71,7 @@
                     <p>De R$1.000,00 a R$ 2.000,00</p>
                     <p><strong>1</strong> Vaga (S)</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsum ducimus praesentium optio ipsa recusandae ipsam. Vel, vitae perspiciatis</p>
-                    <button>Vaga Completa</button>
+                    <button>Ver Vaga Completa</button>
                 </div>
             </div>
 
@@ -94,7 +81,7 @@
                 </h1>
                 <p>Veja ao lado as <span id="barra">vagas que selecionamos para você!</span> </p>
 
-                <button id="refresh"><i class="bi bi-arrow-clockwise"></i> Carregar Novas Vagas</button>
+                <button id="refresh"><i class="bi bi-arrow-clockwise">Carregar Novas Vagas</i></button>
             </div>
         </div>
 

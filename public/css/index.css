@@ -17,7 +17,6 @@
     font-family: texto;
     font-size: 1.12rem;
     box-sizing: border-box;
-
 }
 
 p
@@ -25,9 +24,6 @@ p
     color: #282828;
     line-height: 1.7;
 }
-
-
-
 
 
 header
@@ -41,6 +37,7 @@ header
     top: 0;
     background-color: white;
     z-index: 1;
+    border-bottom: 1px #212121 solid;
 }
 
 header h2
@@ -117,11 +114,11 @@ header h2:hover
     cursor: pointer;
     background-image: url("../image/Banner1.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center; /* ou outra posição desejada */
     display: block;
     z-index: -1;
-    height: 75vh; /* Use 'vh' para 100% da altura da viewport */
+    height: 70vh; /* Use 'vh' para 100% da altura da viewport */
     width: 100vw;
     z-index: -1;
 }

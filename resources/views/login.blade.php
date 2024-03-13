@@ -58,9 +58,9 @@
 
                             <button class="token"><img class="icon1" src="{{ asset('image/google.png') }}" alt=""> <span>Entre com Google</span> </button>
 
-                            <button class="token"><img class="icon2" src="{{ asset('image/linkedin.png') }}" alt=""> <span>Entre com GitHub</span></button>
+                            <button class="token"><img class="icon2" src="{{ asset('image/github.png') }}" alt=""> <span>Entre com GitHub</span></button>
 
-                            <button class="token"><img class="icon3" src="{{ asset('image/github.png') }}" alt=""> <span>Entre com LinkedIn</span></button>
+                            <button class="token"><img class="icon3" src="{{ asset('image/linkedin.png') }}" alt=""> <span>Entre com LinkedIn</span></button>
 
                         </div>
                     </div>
