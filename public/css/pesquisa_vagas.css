@@ -154,8 +154,11 @@ main > .container-vaga
     line-height: 1.8;
 }
 
-.mostrar-mais1
+.mais
 {
+    --display: inline;
+    display: var(--display);
+    cursor: pointer;
     text-decoration: none;
     color: rgb(48, 48, 250);
     font-size: 1rem;
@@ -163,12 +166,7 @@ main > .container-vaga
 
 .txtDetalhe
 {
-    display: none;
-}
-
-.mostrar-mais2
-{
-    display: none;
+    display: none ;
 }
 
 .candidatar button
@@ -179,4 +177,6 @@ main > .container-vaga
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    background-color: #860000;
+    color: white;
 }

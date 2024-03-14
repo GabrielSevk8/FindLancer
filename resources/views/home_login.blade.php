@@ -12,14 +12,48 @@
     <header>
         <div id="lesquerdoHead" class="ladoHead">
             <h1>Findlancer</h1>
-            <h2>Opção 1</h2>
-            <h2>Opção 2</h2>
-            <h2>Opção 3</h2>
-            <h2>Opção 4</h2>
+            <h2>Minhas Vagas</h2>
+            <h2 id="meusDados">Meus Dados</h2>
+            <h2>Sair</h2>
+        </div>
 
+        <!-- O modal -->
+        <div id="myModal" class="modal">
+            <!-- Conteúdo do modal -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Menu de Atualização de Dados</h3>
+                <ul class="menu">
+                    <li><button id="atualizarNomeBtn">Atualizar Nome</button></li>
+                    <li><button id="atualizarEmailBtn">Atualizar Email</button></li>
+                    <li><button id="atualizarSenhaBtn">Atualizar Senha</button></li>
+                    <li><button id="uploadArquivoBtn">Upload de Arquivo PDF</button></li>
+                    <!-- Adicione mais botões conforme necessário -->
+                </ul>
 
+                <!-- Formulários de atualização de dados -->
+                <form id="formAtualizarNome" class="form">
+                    <input type="text" placeholder="Novo Nome" required>
+                    <input type="submit" value="Atualizar Nome">
+                </form>
 
+                <form id="formAtualizarEmail" class="form">
+                    <input type="email" placeholder="Novo Email" required>
+                    <input type="submit" value="Atualizar Email">
+                </form>
 
+                <form id="formAtualizarSenha" class="form">
+                    <input type="password" placeholder="Nova Senha" required>
+                    <input type="password" placeholder="Confirme a Nova Senha" required>
+                    <input type="submit" value="Atualizar Senha">
+                </form>
+
+                <!-- Formulário de upload de arquivo PDF -->
+                <form id="formUploadArquivo" class="form" enctype="multipart/form-data">
+                    <input type="file" accept=".pdf" required>
+                    <input type="submit" value="Enviar PDF">
+                </form>
+            </div>
         </div>
 
         <div id="ldireitoHead" class="ladoHead">
@@ -174,6 +208,78 @@
 
     </footer>
 
+    <script>
+        // Encontre o h2 "Meus Dados"
+        var meusDados = document.getElementById("meusDados");
+
+        // Encontre o modal
+        var modal = document.getElementById("myModal");
+
+        // Encontre o elemento de fechar do modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // Encontre os botões de atualização
+        var atualizarNomeBtn = document.getElementById("atualizarNomeBtn");
+        var atualizarEmailBtn = document.getElementById("atualizarEmailBtn");
+        var atualizarSenhaBtn = document.getElementById("atualizarSenhaBtn");
+        var uploadArquivoBtn = document.getElementById("uploadArquivoBtn");
+
+        // Encontre os formulários de atualização
+        var formAtualizarNome = document.getElementById("formAtualizarNome");
+        var formAtualizarEmail = document.getElementById("formAtualizarEmail");
+        var formAtualizarSenha = document.getElementById("formAtualizarSenha");
+        var formUploadArquivo = document.getElementById("formUploadArquivo");
+
+        // Quando o usuário clicar em "Meus Dados", abra o modal
+        meusDados.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // Quando o usuário clicar no elemento de fechar, feche o modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Quando o usuário clicar fora do modal, feche-o
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Adicione eventos de clique aos botões de atualização
+        atualizarNomeBtn.onclick = function() {
+            // Exiba apenas o formulário de atualizar nome
+            formAtualizarNome.classList.add("active");
+            formAtualizarEmail.classList.remove("active");
+            formAtualizarSenha.classList.remove("active");
+            formUploadArquivo.classList.remove("active");
+        }
+
+        atualizarEmailBtn.onclick = function() {
+            // Exiba apenas o formulário de atualizar email
+            formAtualizarNome.classList.remove("active");
+            formAtualizarEmail.classList.add("active");
+            formAtualizarSenha.classList.remove("active");
+            formUploadArquivo.classList.remove("active");
+        }
+
+        atualizarSenhaBtn.onclick = function() {
+            // Exiba apenas o formulário de atualizar senha
+            formAtualizarNome.classList.remove("active");
+            formAtualizarEmail.classList.remove("active");
+            formAtualizarSenha.classList.add("active");
+            formUploadArquivo.classList.remove("active");
+        }
+
+        uploadArquivoBtn.onclick = function() {
+            // Exiba apenas o formulário de upload de arquivo
+            formAtualizarNome.classList.remove("active");
+            formAtualizarEmail.classList.remove("active");
+            formAtualizarSenha.classList.remove("active");
+            formUploadArquivo.classList.add("active");
+        }
+    </script>
 
 </body>
 </html>

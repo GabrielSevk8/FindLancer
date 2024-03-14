@@ -22,10 +22,6 @@
     <header>
         <div id="lesquerdo" class="ladoHead">
             <h1 class="findNome">FindLancer</h1>
-            <h2>Opção 1</h2>
-            <h2>Opção 2</h2>
-            <h2>Opção 3</h2>
-            <h2>Opção 4</h2>
         </div>
 
         <div id="ldireito" class="ladoHead">

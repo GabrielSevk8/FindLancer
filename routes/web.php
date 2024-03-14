@@ -31,7 +31,9 @@ Route::get('/login', function ()
 //validação de login
 Route::post('/valida', [LoginController::class, 'Login'])->name('valida');
 //logout de uma conta
-Route::get('/logout', [LoginController::class,'sair'])->name('logout');
+Route::get('/logout', [LoginController::class,'Sair'])->name('logout');
+
+//Route::post('/submit',[CadastroControler::class, ''])
 
 //rota: Cadastro
 Route::get('/cadastro', function ()
@@ -47,17 +49,25 @@ Route::get('/home_login', function()
 
 Route::get('/home_emp', function()
 {
-
-}
-)
+    return view('home_emp');
+});
 
 Route::get('/pesquisa_vagas', function()
 {
     return view('pesquisa_vagas');
 });
 
+Route::get('/minhas_vagas', function()
+{
+    return view ('minhas_vagas');
+});
 
-//usuario: parker.devonte@gmail.com
+Route::get('/home_emp/criar_vagas', function()
+{
+    return view('criar_vagas');
+});
+
+//usuario: mtreutel@gmail.com
 //senha: 1234
 
-//faça um código que seja possivel um usuario colocar dados em um input no laravel, e esses mesmos dados seja enviados para um Mysql (dados: nome, email, senha)
+//faça um código que seja possivel um usuario colocar dados em um input no laravel, e esses mesmos dados são enviados para um Mysql (dados: nome, email, senha)

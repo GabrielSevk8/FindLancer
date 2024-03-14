@@ -44,17 +44,20 @@
             <p>Salario</p>
             <p>Localização</p>
             <div class="detalhes">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum veritatis libero soluta, a accusamus quibusdam quo quisquam. Similique, aliquam Lorem ipsum, dolor sit amet consectetur adipisicing elit.  <a href="#" class="mostrar-mais1">mostrar mais</a></p>
-                <p class="txtDetalhe">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum veritatis libero soluta, a accusamus quibusdam quo quisquam. Similique, aliquam Lorem ipsum, dolor sit amet consectetur adipisicing elit.  <span class="pontos">...</span> <span class="mais">ver mais
+                <p id="txtDetalhe1">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
                      assumenda amet recusandae consequatur dolorem doloribus iusto. Odio ullam eaque eos facilis laboriosam
                      placeat sed! Eveniet, quibusdam.
-                     recusandae omnis velit veritatis nobis et porro aspernatur nulla! Atque, eos! Eum numquam maxime culpa autem corrupti, ea saepe, consequatur in perferendis at tempore sunt voluptatem ut, veritatis rem quaerat rerum similique doloribus quas dignissimos? Dolor illum quos vero itaque autem, necessitatibus et fuga maiores temporibus. Suscipit repellendus eius impedit eaque earum quis aperiam ab debitis magnam atque.  <a href="#" class="mostrar-mais2">mostrar mais</a>
+                     recusandae omnis velit veritatis nobis et porro aspernatur nulla! Atque, eos! Eum numquam maxime culpa autem corrupti, ea saepe, consequatur in perferendis at tempore sunt voluptatem ut, veritatis rem quaerat rerum similique doloribus quas dignissimos? Dolor illum quos vero itaque autem, necessitatibus et fuga maiores temporibus. Suscipit repellendus eius impedit eaque earum quis aperiam ab debitis magnam atque.  <span class="pontos2">...</span> <span class="menos">ver menos
                 </p>
 
             </div>
             <div class="candidatar">
-                <button>Aplicar</button>
+                <form action="apply.php" method="post">
+                    <input type="hidden" name="job_id" value="1">
+                    <button class="job-apply-button">Aplicar</button>
+                </form>
             </div>
         </div>
 
@@ -65,21 +68,122 @@
             <p>Salario</p>
             <p>Localização</p>
             <div class="detalhes">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, tenetur. Omnis sit laudantium asperiores
-                quod, ipsa quo sed magnam aliquid libero iusto sunt, nostrum iste. Dolorum nam qui cumque. Sunt dignissimos
-                amet, ducimus beatae dolore non cum consequuntur animi pariatur!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum veritatis libero soluta, a accusamus quibusdam quo quisquam. Similique, aliquam Lorem ipsum, dolor sit amet consectetur adipisicing elit.  <span class="pontos">...</span> <span class="mais">ver mais
+                <p class="txtDetalhe2">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
+                     assumenda amet recusandae consequatur dolorem doloribus iusto. Odio ullam eaque eos facilis laboriosam
+                     placeat sed! Eveniet, quibusdam.
+                     recusandae omnis velit veritatis nobis et porro aspernatur nulla! Atque, eos! Eum numquam maxime culpa autem corrupti, ea saepe, consequatur in perferendis at tempore sunt voluptatem ut, veritatis rem quaerat rerum similique doloribus quas dignissimos? Dolor illum quos vero itaque autem, necessitatibus et fuga maiores temporibus. Suscipit repellendus eius impedit eaque earum quis aperiam ab debitis magnam atque.  <span class="pontos2">...</span> <span class="menos">ver menos
+                </p>
+
+            </div>
+            <div class="candidatar">
+                <form action="apply.php" method="post">
+                    <input type="hidden" name="job_id" value="1">
+                    <button class="job-apply-button">Aplicar</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="container-vaga">
+            <h1>Nome Vaga</h1>
+            <h2>Nome Empresa</h2>
+            <p>Salario</p>
+            <p>Localização</p>
+            <div class="detalhes">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum veritatis libero soluta, a accusamus quibusdam quo quisquam. Similique, aliquam Lorem ipsum, dolor sit amet consectetur adipisicing elit. <span class="pontos">...</span> <span class="mais">ver mais
                 <p class="txtDetalhe">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
                      assumenda amet recusandae consequatur dolorem doloribus iusto. Odio ullam eaque eos facilis laboriosam
                      placeat sed! Eveniet, quibusdam.
+                     recusandae omnis velit veritatis nobis et porro aspernatur nulla! Atque, eos! Eum numquam maxime culpa autem corrupti, ea saepe, consequatur in perferendis at tempore sunt voluptatem ut, veritatis rem quaerat rerum similique doloribus quas dignissimos? Dolor illum quos vero itaque autem, necessitatibus et fuga maiores temporibus. Suscipit repellendus eius impedit eaque earum quis aperiam ab debitis magnam atque.  <span class="pontos2">...</span> <span class="menos">ver menos
                 </p>
-                <button class="mostrar-mais">Continuar Lendo</button>
+
             </div>
             <div class="candidatar">
-                <button>Aplicar</button>
+
+                    <form action="apply.php" method="post">
+                        <input type="hidden" name="job_id" value="1">
+                        <button class="job-apply-button">Aplicar</button>
+                    </form>
+            </div>
+        </div>
+
+
+        <div class="container-vaga">
+            <h1>Nome Vaga</h1>
+            <h2>Nome Empresa</h2>
+            <p>Salario</p>
+            <p>Localização</p>
+            <div class="detalhes">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum veritatis libero soluta, a accusamus quibusdam quo quisquam. Similique, aliquam Lorem ipsum, dolor sit amet consectetur adipisicing elit.  <span class="pontos">...</span> <span class="mais">ver mais
+                <p class="txtDetalhe">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
+                     assumenda amet recusandae consequatur dolorem doloribus iusto. Odio ullam eaque eos facilis laboriosam
+                     placeat sed! Eveniet, quibusdam.
+                     recusandae omnis velit veritatis nobis et porro aspernatur nulla! Atque, eos! Eum numquam maxime culpa autem corrupti, ea saepe, consequatur in perferendis at tempore sunt voluptatem ut, veritatis rem quaerat rerum similique doloribus quas dignissimos? Dolor illum quos vero itaque autem, necessitatibus et fuga maiores temporibus. Suscipit repellendus eius impedit eaque earum quis aperiam ab debitis magnam atque.  <span class="pontos2">...</span> <span class="menos">ver menos
+                </p>
+
+            </div>
+            <div class="candidatar">
+                <form action="apply.php" method="post">
+                    <input type="hidden" name="job_id" value="1">
+                    <button class="job-apply-button">Aplicar</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="container-vaga">
+            <h1>Nome Vaga</h1>
+            <h2>Nome Empresa</h2>
+            <p>Salario</p>
+            <p>Localização</p>
+            <div class="detalhes">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum veritatis libero soluta, a accusamus quibusdam quo quisquam. Similique, aliquam Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                <span class="pontos">...</span> <span onclick="verMais()" class="mais">ver mais</span>
+                </p>
+                <p id="txtDetalhe5">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
+                     assumenda amet recusandae consequatur dolorem doloribus iusto. Odio ullam eaque eos facilis laboriosam
+                     placeat sed! Eveniet, quibusdam.
+                     recusandae omnis velit veritatis nobis et porro aspernatur nulla! Atque, eos! Eum numquam maxime culpa autem corrupti, ea saepe, consequatur in perferendis at tempore sunt voluptatem ut, veritatis rem quaerat rerum similique doloribus quas dignissimos? Dolor illum quos vero itaque autem, necessitatibus et fuga maiores temporibus. Suscipit repellendus eius impedit eaque earum quis aperiam ab debitis magnam atque.  <span class="pontos2">...</span> <span class="menos">ver menos
+                </p>
+
+
+            </div>
+            <div class="candidatar">
+
+                <h2 class="job-title">Web Developer</h2>
+                <p class="job-company">ABC Company <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p>
+                <p class="job-skill">HTML, CSS, JavaScript</p>
+                <form action="apply.php" method="post">
+                    <input type="hidden" name="job_id" value="1">
+                    <button class="job-apply-button">Aplicar</button>
+                </form>
+
             </div>
         </div>
 
     </main>
+    <script >
+
+function verMais() {
+    let pontos = document.querySelector(".pontos");
+    let txtDetalhe = document.querySelectorAll("#txtDetalhe5");
+    let verMais = document.querySelector(".mais");
+
+    if (pontos.style.display === "none") {
+        pontos.style.display = "inline";
+        txtDetalhe.style.display = "none";
+        verMais.innerHTML = "Ver Mais";
+    } else {
+        pontos.style.display = "none";
+        txtDetalhe.style.display = "block";
+        verMais.innerHTML = "Ver Menos";
+    }
+}
+    </script>
 </body>
 </html>

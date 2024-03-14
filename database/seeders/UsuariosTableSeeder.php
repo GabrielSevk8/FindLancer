@@ -15,6 +15,9 @@ class UsuariosTableSeeder extends Seeder
      */
     public function run(): void
     {
+
+        $arrayValues = [ 's','n' ];
+
         # cria uma instância da classe Faker
         $faker = Faker::create();
 
@@ -24,6 +27,7 @@ class UsuariosTableSeeder extends Seeder
                 'nome'=> $faker->name,
                 'email'=> $faker->unique()->email,
                 'password'=> bcrypt('1234'),
+                'choose' => $faker->randomElement(['s' ,'n']),
             ]);
         }
     }

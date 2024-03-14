@@ -37,9 +37,11 @@
 
             <form action="/submit_form" method="post" onsubmit="return validarFormulario()">
 
+                @csrf
+
                 <div class="box">
                     <label for="usuario">Usuário:</label>
-                    <input type="text" id="usuario" name="usuario" required>
+                    <input type="text" id="usuario" name="name" required>
                 </div>
 
                 <div class="box">
@@ -58,9 +60,9 @@
                 </div>
 
                 <div class="boxEscolha">
-                    <input type="radio" id="free" name="escolha" value="Freelancer">
+                    <input type="radio" id="free" name="choose" value="n">
                     <label class="free" for="free">Freelancer</label>
-                    <input type="radio" id="emp" name="escolha" value="Empresa">
+                    <input type="radio" id="emp" name="choose" value="s">
                     <label class="emp" for="emp">Empresa</label>
                 </div>
 
