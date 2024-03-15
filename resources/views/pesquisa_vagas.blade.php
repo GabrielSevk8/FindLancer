@@ -44,60 +44,60 @@
             <p>Salario</p>
             <p>Localização</p>
             <div class="detalhes">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum veritatis libero soluta, a accusamus quibusdam quo quisquam. Similique, aliquam Lorem ipsum, dolor sit amet consectetur adipisicing elit.  <span class="pontos">...</span> <span class="mais">ver mais
-                <p id="txtDetalhe1">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-                     assumenda amet recusandae consequatur dolorem doloribus iusto. Odio ullam eaque eos facilis laboriosam
-                     placeat sed! Eveniet, quibusdam.
-                     recusandae omnis velit veritatis nobis et porro aspernatur nulla! Atque, eos! Eum numquam maxime culpa autem corrupti, ea saepe, consequatur in perferendis at tempore sunt voluptatem ut, veritatis rem quaerat rerum similique doloribus quas dignissimos? Dolor illum quos vero itaque autem, necessitatibus et fuga maiores temporibus. Suscipit repellendus eius impedit eaque earum quis aperiam ab debitis magnam atque.  <span class="pontos2">...</span> <span class="menos">ver menos
-                </p>
-
-            </div>
-            <div class="candidatar">
-                <form action="apply.php" method="post">
-                    <input type="hidden" name="job_id" value="1">
-                    <button class="job-apply-button">Aplicar</button>
-                </form>
-            </div>
-        </div>
-
-
-        <div class="container-vaga">
-            <h1>Nome Vaga</h1>
-            <h2>Nome Empresa</h2>
-            <p>Salario</p>
-            <p>Localização</p>
-            <div class="detalhes">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum veritatis libero soluta, a accusamus quibusdam quo quisquam. Similique, aliquam Lorem ipsum, dolor sit amet consectetur adipisicing elit.  <span class="pontos">...</span> <span class="mais">ver mais
-                <p class="txtDetalhe2">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-                     assumenda amet recusandae consequatur dolorem doloribus iusto. Odio ullam eaque eos facilis laboriosam
-                     placeat sed! Eveniet, quibusdam.
-                     recusandae omnis velit veritatis nobis et porro aspernatur nulla! Atque, eos! Eum numquam maxime culpa autem corrupti, ea saepe, consequatur in perferendis at tempore sunt voluptatem ut, veritatis rem quaerat rerum similique doloribus quas dignissimos? Dolor illum quos vero itaque autem, necessitatibus et fuga maiores temporibus. Suscipit repellendus eius impedit eaque earum quis aperiam ab debitis magnam atque.  <span class="pontos2">...</span> <span class="menos">ver menos
-                </p>
-
-            </div>
-            <div class="candidatar">
-                <form action="apply.php" method="post">
-                    <input type="hidden" name="job_id" value="1">
-                    <button class="job-apply-button">Aplicar</button>
-                </form>
-            </div>
-        </div>
-
-
-        <div class="container-vaga">
-            <h1>Nome Vaga</h1>
-            <h2>Nome Empresa</h2>
-            <p>Salario</p>
-            <p>Localização</p>
-            <div class="detalhes">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum veritatis libero soluta, a accusamus quibusdam quo quisquam. Similique, aliquam Lorem ipsum, dolor sit amet consectetur adipisicing elit. <span class="pontos">...</span> <span class="mais">ver mais
+                <p class="primeiroTxt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum veritatis libero soluta, a accusamus quibusdam quo quisquam. Similique, aliquam Lorem ipsum, dolor sit amet consectetur adipisicing elit. <span class="mais ver">ver mais</span>
                 <p class="txtDetalhe">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
                      assumenda amet recusandae consequatur dolorem doloribus iusto. Odio ullam eaque eos facilis laboriosam
                      placeat sed! Eveniet, quibusdam.
-                     recusandae omnis velit veritatis nobis et porro aspernatur nulla! Atque, eos! Eum numquam maxime culpa autem corrupti, ea saepe, consequatur in perferendis at tempore sunt voluptatem ut, veritatis rem quaerat rerum similique doloribus quas dignissimos? Dolor illum quos vero itaque autem, necessitatibus et fuga maiores temporibus. Suscipit repellendus eius impedit eaque earum quis aperiam ab debitis magnam atque.  <span class="pontos2">...</span> <span class="menos">ver menos
+                     recusandae omnis velit veritatis nobis et porro aspernatur nulla! Atque, eos! Eum numquam maxime culpa autem corrupti, ea saepe, consequatur in perferendis at tempore sunt voluptatem ut, veritatis rem quaerat rerum similique doloribus quas dignissimos? Dolor illum quos vero itaque autem, necessitatibus et fuga maiores temporibus. Suscipit repellendus eius impedit eaque earum quis aperiam ab debitis magnam atque.  <span class="menos ver">ver menos</span>
+                </p>
+
+            </div>
+            <div class="candidatar">
+                <form action="apply.php" method="post">
+                    <input type="hidden" name="job_id" value="1">
+                    <button class="job-apply-button">Aplicar</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="container-vaga">
+            <h1>Nome Vaga</h1>
+            <h2>Nome Empresa</h2>
+            <p>Salario</p>
+            <p>Localização</p>
+            <div class="detalhes">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum veritatis libero soluta, a accusamus quibusdam quo quisquam. Similique, aliquam Lorem ipsum, dolor sit amet consectetur adipisicing elit.  <span class="mais ver">ver mais</span>
+                <p class="txtDetalhe">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
+                     assumenda amet recusandae consequatur dolorem doloribus iusto. Odio ullam eaque eos facilis laboriosam
+                     placeat sed! Eveniet, quibusdam.
+                     recusandae omnis velit veritatis nobis et porro aspernatur nulla! Atque, eos! Eum numquam maxime culpa autem corrupti, ea saepe, consequatur in perferendis at tempore sunt voluptatem ut, veritatis rem quaerat rerum similique doloribus quas dignissimos? Dolor illum quos vero itaque autem, necessitatibus et fuga maiores temporibus. Suscipit repellendus eius impedit eaque earum quis aperiam ab debitis magnam atque. <span class="menos ver">ver menos</span>
+                </p>
+
+            </div>
+            <div class="candidatar">
+                <form action="apply.php" method="post">
+                    <input type="hidden" name="job_id" value="1">
+                    <button class="job-apply-button">Aplicar</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="container-vaga">
+            <h1>Nome Vaga</h1>
+            <h2>Nome Empresa</h2>
+            <p>Salario</p>
+            <p>Localização</p>
+            <div class="detalhes">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum veritatis libero soluta, a accusamus quibusdam quo quisquam. Similique, aliquam Lorem ipsum, dolor sit amet consectetur adipisicing elit. <span class="mais ver">ver mais</span>
+                <p class="txtDetalhe">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
+                     assumenda amet recusandae consequatur dolorem doloribus iusto. Odio ullam eaque eos facilis laboriosam
+                     placeat sed! Eveniet, quibusdam.
+                     recusandae omnis velit veritatis nobis et porro aspernatur nulla! Atque, eos! Eum numquam maxime culpa autem corrupti, ea saepe, consequatur in perferendis at tempore sunt voluptatem ut, veritatis rem quaerat rerum similique doloribus quas dignissimos? Dolor illum quos vero itaque autem, necessitatibus et fuga maiores temporibus. Suscipit repellendus eius impedit eaque earum quis aperiam ab debitis magnam atque. <span class="menos ver">ver menos</span>
                 </p>
 
             </div>
@@ -117,12 +117,12 @@
             <p>Salario</p>
             <p>Localização</p>
             <div class="detalhes">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum veritatis libero soluta, a accusamus quibusdam quo quisquam. Similique, aliquam Lorem ipsum, dolor sit amet consectetur adipisicing elit.  <span class="pontos">...</span> <span class="mais">ver mais
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum veritatis libero soluta, a accusamus quibusdam quo quisquam. Similique, aliquam Lorem ipsum, dolor sit amet consectetur adipisicing elit.  <span class="mais ver">ver mais</span>
                 <p class="txtDetalhe">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
                      assumenda amet recusandae consequatur dolorem doloribus iusto. Odio ullam eaque eos facilis laboriosam
                      placeat sed! Eveniet, quibusdam.
-                     recusandae omnis velit veritatis nobis et porro aspernatur nulla! Atque, eos! Eum numquam maxime culpa autem corrupti, ea saepe, consequatur in perferendis at tempore sunt voluptatem ut, veritatis rem quaerat rerum similique doloribus quas dignissimos? Dolor illum quos vero itaque autem, necessitatibus et fuga maiores temporibus. Suscipit repellendus eius impedit eaque earum quis aperiam ab debitis magnam atque.  <span class="pontos2">...</span> <span class="menos">ver menos
+                     recusandae omnis velit veritatis nobis et porro aspernatur nulla! Atque, eos! Eum numquam maxime culpa autem corrupti, ea saepe, consequatur in perferendis at tempore sunt voluptatem ut, veritatis rem quaerat rerum similique doloribus quas dignissimos? Dolor illum quos vero itaque autem, necessitatibus et fuga maiores temporibus. Suscipit repellendus eius impedit eaque earum quis aperiam ab debitis magnam atque. <span class="menos ver">ver menos</span>
                 </p>
 
             </div>
@@ -142,13 +142,13 @@
             <p>Localização</p>
             <div class="detalhes">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum veritatis libero soluta, a accusamus quibusdam quo quisquam. Similique, aliquam Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                <span class="pontos">...</span> <span onclick="verMais()" class="mais">ver mais</span>
+                <span class="mais ver">ver mais</span>
                 </p>
-                <p id="txtDetalhe5">
+                <p class="txtDetalhe">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
                      assumenda amet recusandae consequatur dolorem doloribus iusto. Odio ullam eaque eos facilis laboriosam
                      placeat sed! Eveniet, quibusdam.
-                     recusandae omnis velit veritatis nobis et porro aspernatur nulla! Atque, eos! Eum numquam maxime culpa autem corrupti, ea saepe, consequatur in perferendis at tempore sunt voluptatem ut, veritatis rem quaerat rerum similique doloribus quas dignissimos? Dolor illum quos vero itaque autem, necessitatibus et fuga maiores temporibus. Suscipit repellendus eius impedit eaque earum quis aperiam ab debitis magnam atque.  <span class="pontos2">...</span> <span class="menos">ver menos
+                     recusandae omnis velit veritatis nobis et porro aspernatur nulla! Atque, eos! Eum numquam maxime culpa autem corrupti, ea saepe, consequatur in perferendis at tempore sunt voluptatem ut, veritatis rem quaerat rerum similique doloribus quas dignissimos? Dolor illum quos vero itaque autem, necessitatibus et fuga maiores temporibus. Suscipit repellendus eius impedit eaque earum quis aperiam ab debitis magnam atque. <span class="menos ver">ver menos</span>
                 </p>
 
 
@@ -167,23 +167,6 @@
         </div>
 
     </main>
-    <script >
-
-function verMais() {
-    let pontos = document.querySelector(".pontos");
-    let txtDetalhe = document.querySelectorAll("#txtDetalhe5");
-    let verMais = document.querySelector(".mais");
-
-    if (pontos.style.display === "none") {
-        pontos.style.display = "inline";
-        txtDetalhe.style.display = "none";
-        verMais.innerHTML = "Ver Mais";
-    } else {
-        pontos.style.display = "none";
-        txtDetalhe.style.display = "block";
-        verMais.innerHTML = "Ver Menos";
-    }
-}
-    </script>
+    <script src="{{ asset('js/pesquisa_vagas.js')}}"></script>
 </body>
 </html>

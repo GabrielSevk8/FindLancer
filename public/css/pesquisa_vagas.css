@@ -154,20 +154,24 @@ main > .container-vaga
     line-height: 1.8;
 }
 
-.mais
+.ver
 {
-    --display: inline;
-    display: var(--display);
     cursor: pointer;
     text-decoration: none;
     color: rgb(48, 48, 250);
     font-size: 1rem;
 }
 
-.txtDetalhe
-{
-    display: none ;
+.txtDetalhe {
+    max-height: 0;
+    overflow: hidden;
+    transition: display 0.5s ease;
 }
+
+.txtDetalhe:click {
+     /* Um valor grande o suficiente para acomodar o conteúdo */
+}
+
 
 .candidatar button
 {

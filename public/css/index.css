@@ -17,7 +17,22 @@
     font-family: texto;
     font-size: 1.12rem;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
+a
+{
+    text-decoration: none;
+    color: black;
+
+}
+
+a h1
+{
+    font-size: 1.3rem;
+}
+
+
 
 p
 {

@@ -33,7 +33,7 @@ Route::post('/valida', [LoginController::class, 'Login'])->name('valida');
 //logout de uma conta
 Route::get('/logout', [LoginController::class,'Sair'])->name('logout');
 
-//Route::post('/submit',[CadastroControler::class, ''])
+Route::post('/submit_form',[CadastroController::class, 'Login'])->name('submit_form');
 
 //rota: Cadastro
 Route::get('/cadastro', function ()

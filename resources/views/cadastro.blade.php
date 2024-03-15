@@ -33,8 +33,6 @@
         </div>
 
         <div class="container">
-            <form action="/submit_form" method="post" onsubmit="return validarSenha()">
-
             <form action="/submit_form" method="post" onsubmit="return validarFormulario()">
 
                 @csrf

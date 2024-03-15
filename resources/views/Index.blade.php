@@ -21,7 +21,11 @@
 <body>
     <header>
         <div id="lesquerdo" class="ladoHead">
+
             <h1 class="findNome">FindLancer</h1>
+            <a href="#criacaoContas"><h1>Crie sua Conta</h1></a>
+            <a href="#selecaoFiltros"><h1>Pesquisa por Áreas</h1></a>
+
         </div>
 
         <div id="ldireito" class="ladoHead">

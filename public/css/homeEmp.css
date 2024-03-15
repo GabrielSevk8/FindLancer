@@ -23,7 +23,7 @@ p, span
     font-size: 1.3rem;
 }
 
-#logo
+.logo
 {
     width: 20%;
     cursor: pointer;
@@ -31,12 +31,12 @@ p, span
     transition: transform ease-in-out 150ms;
 }
 
-#logo:hover
+.logo:hover
 {
     transform: scale(1.1);
 }
 
-#banner
+.banner
 {
     width: 100%;
 }
@@ -67,7 +67,7 @@ header h2:hover
     color: #c40001;
 }
 
- .ladoHead
+.ladoHead
 {
     align-items: center;
     width: 50%;
@@ -105,10 +105,10 @@ header h2:hover
 }
 
 
-#login
+.login
 {
     margin-left: 15px;
-    background-color: #212121;
+    background-color: #860000;
     height: 100%;
     width: 38%;
     display: flex;
@@ -120,9 +120,9 @@ header h2:hover
     transition: background-color ease-in-out 150ms;
 }
 
-#login:hover
+.login:hover
 {
-    background-color: #860000;
+    background-color: #272727;
 }
 
 .pesquisa
@@ -139,7 +139,7 @@ header h2:hover
 
 .hero
 {
-    background-color: #af0000;
+    background-color: #272727;
     display: flex;
     justify-content: space-around;
     height: 100%;
@@ -147,7 +147,7 @@ header h2:hover
 }
 
 
-#ldireito img
+.ldireito img
 {
     height: 444.95px;
     width: 600px;
@@ -170,37 +170,40 @@ header h2:hover
     padding: 3% 6%;
 }
 
-#titulo
+.titulo
 {
     font-size: 1.8rem;
     margin-bottom: 20px;
 }
 
-#containerPesquisa
+.containerCriar
 {
     background-color: white;
     color: black;
     padding: 2.5%;
-    width: 78%;
+    width: 58%;
     margin-top: 1rem;
     border-radius: 8px;
 }
 
+.containerCriar p{
+    padding-bottom: 5px;
+}
 
-#caixaPesquisa
+
+.caixaCriar
 {
     display: flex;
     max-width: 519px;
-    justify-content: center;
     font-size: 50px;
 }
 
-#caixaPesquisa form
+.caixaCriar form
 {
     width: 50%;
 }
 
-#caixaPesquisa form input
+.caixaCriar form input
 {
     width: 100%;
     margin-right: 10px; /* Espaçamento entre input e botão, ajuste conforme necessário */
@@ -209,18 +212,18 @@ header h2:hover
     padding: 10px; /* Ajuste conforme necessário */
 }
 
-#botaoPesquisa {
+.botaoCriar {
     display: flex;
     width: 50%; /* Largura desejada para o botão, ajuste conforme necessário */
-    background-color: #2c2c2c;
+    background-color: #c40001;
     border-radius: 5px;
     color: white;
     cursor: pointer;
     padding: 10px; /* Ajuste conforme necessário */
-    margin-left: 15px;
+    margin-left: 0px;
 }
 
-#txtBotao
+.txtBotao
 {
     margin-left: 5px; /* Ajuste conforme necessário */
 }
@@ -228,7 +231,7 @@ header h2:hover
 
 /*Vagas Recomendadas*/
 
-#containerVagas
+.containerVagas
 {
     background-color: white;
 
@@ -239,7 +242,7 @@ header h2:hover
     line-height: 1.8;
 }
 
-#textVagasRecomendadas  #recomendado
+.textVagasRecomendadas .recomendado
 {
     color: #700000;
     font-size: inherit;
@@ -248,30 +251,30 @@ header h2:hover
     padding: 3%;
 }
 
-#barra
+.barra
 {
     border-bottom: #860000 solid 2px !important;
 }
 
-#textVagasRecomendadas
+.textVagasRecomendadas
 {
     padding: 4% 3%;
 }
 
-#textVagasRecomendadas h1
+.textVagasRecomendadas h1
 {
     font-size: 2.3rem;
     margin-bottom: 2rem;
 }
 
-#textVagasRecomendadas
+.textVagasRecomendadas
 {
     border-left: black 2px solid;
     width: 50vw;
     height: 100%;
 }
 
-#vagas
+.vagas
 {
     display: inherit;
     justify-content: space-around;
@@ -288,7 +291,7 @@ header h2:hover
     width: 43%;
 }
 
-#linhaSuperiorVaga
+.linhaSuperiorVaga
 {
     display: flex;
 }
@@ -326,21 +329,21 @@ header h2:hover
 
 /* Avaliações */
 
-#containerClientes
+.containerClientes
 {
     height: 65vh;
-    background-color: #2c2c2c;
+    background-color: #860000;
     color: white;
     padding: 3%;
 }
 
-#tituloClientes
+.tituloClientes
 {
     text-align: center;
     font-size: 2.3rem;
 }
 
-#avaliacoes
+.avaliacoes
 {
     display: flex;
     justify-content: space-around;
@@ -355,7 +358,7 @@ header h2:hover
     border-radius: 9px;
     margin-top: 4rem;
     background-color: white;
-    color: #860000;
+    color: black;
     padding:  1% 2.5%;
 
 }
@@ -390,7 +393,7 @@ flex-direction: row;
 
 
 
-#textoAvaliacao
+.textoAvaliacao
 {
     display: inherit;
     flex-direction: column;
