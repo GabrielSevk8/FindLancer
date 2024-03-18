@@ -15,16 +15,25 @@ class LoginController extends Controller
 
         $credenciais = $dadosLogin->only('email','password');
 
-        if( Auth::attempt( $credenciais))
-        {
-            return redirect() -> intended("home_login");
-        }
-        else
-        {
-            return back()->with( "error", "Usuário ou senha incorretos!");
+    //NAO!!
+    //MECHE!!
+    //NISSO!!
+    //APRECIE O PODER DO Phind
+
+        if (Auth::attempt($credenciais)) {
+
+            $user = Auth::user();
+            $choose = $user->choose;
+
+            if ($choose == "s") {
+                return redirect()->intended("home_emp");
+            } elseif($choose == "n") {
+                return redirect()->intended("home_login");
+            }
+        } else {
+            return back()->with("error", "Usuário ou senha incorretos!");
         }
 
-        
 
 
     }
@@ -37,6 +46,6 @@ class LoginController extends Controller
 
        //$sessao->session->regenerateToken();
 
-        return redirect("login");
+        return redirect("/");
     }
 }

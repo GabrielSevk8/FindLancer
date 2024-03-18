@@ -11,9 +11,12 @@
     <header>
         <div id="lesquerdoHead" class="ladoHead">
             <h1>Findlancer - Empresas</h1>
+
         </div>
 
         <div id="ldireitoHead" class="ladoHead">
+
+            <a class="logout" href="/logout"><h2>Sair</h2></a>
 
             <div class="login">
                 *Empresa*

@@ -21,7 +21,14 @@
 a
 {
     text-decoration: none;
+    color: #5c6066;
 }
+
+a:hover
+{
+    color: #c40001;
+}
+
 
 p, span
 {

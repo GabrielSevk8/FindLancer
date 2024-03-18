@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="{{ asset('css/minhas_vagas.css')}}">
 </head>
 <body>
-<h1>Minhas Vagas</h1>
+
+	<div class="box">
+		<h1>Minhas Vagas</h1>
+		<h3><a href="/home_login">Voltar</a></h3>
+	</div>
+
 	<table id="jobsTable">
 		<thead>
 			<tr>
@@ -16,8 +21,8 @@
 				<th>Cargo</th>
 				<th>Status</th>
 				<th>Data de Aplicação</th>
-
-
+		</thead>
+	</table>
 
 </body>
 

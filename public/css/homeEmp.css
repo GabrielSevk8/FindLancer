@@ -18,6 +18,14 @@
 
 }
 
+a{
+    text-decoration: none;
+}
+
+.logout{
+    margin-right: 30px;
+}
+
 p, span
 {
     font-size: 1.3rem;

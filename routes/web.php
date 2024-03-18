@@ -21,7 +21,6 @@ Route::get('/', function ()
     return view('index');
 });
 
-
 //rota;:login
 Route::get('/login', function ()
 {
@@ -30,6 +29,7 @@ Route::get('/login', function ()
 
 //validação de login
 Route::post('/valida', [LoginController::class, 'Login'])->name('valida');
+
 //logout de uma conta
 Route::get('/logout', [LoginController::class,'Sair'])->name('logout');
 
@@ -67,6 +67,13 @@ Route::get('/home_emp/criar_vagas', function()
     return view('criar_vagas');
 });
 
+Route::get('/minhas_vagas', function()
+{
+    return view('minhas_vagas');
+});
+
+
+//usua
 //usuario: mtreutel@gmail.com
 //senha: 1234
 

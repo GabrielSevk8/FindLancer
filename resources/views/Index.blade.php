@@ -31,7 +31,7 @@
         <div id="ldireito" class="ladoHead">
             <a href="/login" class="login">
                 <div>
-                    Acesse sua Conta
+                    <h1>ACESSE SUA CONTA</h1>
                 </div>
             </a>
         </div>

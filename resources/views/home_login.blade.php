@@ -12,7 +12,7 @@
     <header>
         <div id="lesquerdoHead" class="ladoHead">
             <h1>Findlancer</h1>
-            <h2>Minhas Vagas</h2>
+            <h2><a href="/minhas_vagas">Minhas Vagas</a></h2>
             <h2 id="meusDados">Meus Dados</h2>
             <a href="/logout"><h2>Sair</h2></a>
         </div>
