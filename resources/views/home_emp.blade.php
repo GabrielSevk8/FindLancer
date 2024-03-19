@@ -11,6 +11,7 @@
     <header>
         <div id="lesquerdoHead" class="ladoHead">
             <h1>Findlancer - Empresas</h1>
+            <a href="#criacaoContas"><h1 class="opcoesHeader">Crie Vagas</h1></a>
 
         </div>
 
@@ -46,42 +47,6 @@
                 <img src="{{ asset( 'image/Findlancer_logo4.png')}}" alt="">
             </div>
         </section>
-
-
-
-
-        <div class="containerVagas">
-
-
-            <div class="vagas">
-                <div class="vaga">
-                    <h1 class="tituloVaga">{vaga.titulo}</h1>
-                    <h1>Nome empresa</h1>
-                    <p>De R$1.000,00 a R$ 2.000,00</p>
-                    <p><strong>1</strong> Vaga (S)</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsum ducimus praesentium optio ipsa recusandae ipsam. Vel, vitae perspiciatis</p>
-                    <button>Ver Vaga Completa</button>
-                </div>
-
-                <div class="vaga">
-                <h1 class="tituloVaga">Titulo Vaga</h1>
-                    <h1>Nome empresa</h1>
-                    <p>De R$1.000,00 a R$ 2.000,00</p>
-                    <p><strong>1</strong> Vaga (S)</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsum ducimus praesentium optio ipsa recusandae ipsam. Vel, vitae perspiciatis</p>
-                    <button>Ver Vaga Completa</button>
-                </div>
-            </div>
-
-            <div class="textVagasRecomendadas">
-                <h1>Vagas
-                    <span class="recomendado">Recomendadas</span>
-                </h1>
-                <p>Veja ao lado as <span class="barra">vagas que selecionamos para você!</span> </p>
-
-                <button id="refresh"><i class="bi bi-arrow-clockwise">Carregar Novas Vagas</i></button>
-            </div>
-        </div>
 
 
 
@@ -147,11 +112,7 @@
         <div class="logoFooter">
             <img src="{{ asset( 'image/Findlancer_logo2.png')}}" alt="">
         </div>
-        <div class="opcoes">
-            <p class="opcoes">Opção 1</p>
-            <p class="opcoes">Opção 2</p>
-            <p class="opcoes">Opção 3</p>
-        </div>
+
 
         <div class="cr">
             <p> &copy; FindLancer - Todos os Direitos Reservados</p>

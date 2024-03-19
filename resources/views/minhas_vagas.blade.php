@@ -11,7 +11,7 @@
 
 	<div class="box">
 		<h1>Minhas Vagas</h1>
-		<h3><a href="/home_login">Voltar</a></h3>
+		<h1><a href="/home_login">Voltar</a></h1>
 	</div>
 
 	<table id="jobsTable">

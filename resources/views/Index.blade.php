@@ -23,16 +23,14 @@
         <div id="lesquerdo" class="ladoHead">
 
             <h1 class="findNome">FindLancer</h1>
-            <a href="#criacaoContas"><h1>Crie sua Conta</h1></a>
-            <a href="#selecaoFiltros"><h1>Pesquisa por Áreas</h1></a>
+            <a href="#criacaoContas"><h1 class="opcoesHeader">Crie sua Conta</h1></a>
+            <a href="#containerClientes"><h1 class="opcoesHeader">Avaliacões dos Clientes</h1></a>
 
         </div>
 
         <div id="ldireito" class="ladoHead">
             <a href="/login" class="login">
-                <div>
-                    <h1>ACESSE SUA CONTA</h1>
-                </div>
+                <h1>ACESSE SUA CONTA</h1>
             </a>
         </div>
     </header>
@@ -56,68 +54,84 @@
                         para encontrar o melhor funcionário.
                     </p>
 
-                    <button> Criar Conta Empresa</button>
+                    <button> <a href="/cadastro">Criar Conta Empresa</a></button>
                 </div>
                 <div id="cliente">
                     <p>Para</p>
                     <h1>Você</h1>
-                    <p>Ache vagas destinada ao seu perfil como free-lancer,
+                    <p>Veja vagas destinadas ao seu perfil como free-lancer,
                         utilize nossos filtros para buscara vaga ideal, usando
                         uma interface fácil de intuitiva.
                     </p>
-                    <button>Criar conta Pessoal</button>
+                    <button><a href="/cadastro">Criar Conta Empresa</a></button>
                 </div>
             </div>
 
         </div>
 
-        <div id="selecaoFiltros">
 
-            <div id="listFiltros">
-                <div class="filtroCard">
-                    <i class="bi bi-code-slash"></i>
-                    <p>Front-End</p>
+        <div id="containerClientes">
+            <h1 id="tituloClientes">O que estão dizendo da FindLancer?</h1>
+            <div id="avaliacoes">
+                <div class="avaliacao">
+                    <div class="SuperiorAvaliacao">
+                        <img src="{{ asset( 'image/iconGuest.png')}}" alt="" class="guest">
+                        <div class="clientes">
+                            <h1>Cliente 1</h1>
+                            <img src="{{ asset( 'image/5stars.png')}}" alt="" class="stars">
+                        </div>
+
+                    </div>
+
+                    <div class="textoAvaliacao">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem inventore aliquam et quas rem reiciendis quaerat, error </p>
+                    </div>
+
+
+
+
                 </div>
 
-                <div class="filtroCard">
-                    <i class="bi bi-braces"></i>
-                    <p>Back-End</p>
+                <div class="avaliacao">
+                    <div class="SuperiorAvaliacao">
+                        <img src="{{ asset( 'image/iconGuest.png')}}" alt="" class="guest">
+                        <div class="clientes">
+                            <h1>Cliente 1</h1>
+                            <img src="{{ asset( 'image/5stars.png')}}" alt="" class="stars">
+                        </div>
+
+                    </div>
+
+                    <div class="textoAvaliacao">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem inventore aliquam et quas rem reiciendis quaerat, error </p>
+                    </div>
+
                 </div>
 
-                <div class="filtroCard">
-                    <i class="bi bi-code-square"></i>
-                    <p>Full Stack</p>
-                </div>
+                <div class="avaliacao">
+                    <div class="SuperiorAvaliacao">
+                        <img src="{{ asset( 'image/iconGuest.png')}}" alt="" class="guest">
+                        <div class="clientes">
+                            <h1>Cliente 1</h1>
+                            <img src="{{ asset( 'image/5stars.png')}}" alt="" class="stars">
+                        </div>
 
-                <div class="filtroCard">
-                    <i class="bi bi-cpu"></i>
-                    <p>Hardware</p>
-                </div>
+                    </div>
 
-                <div class="filtroCard">
-                    <i class="bi bi-router"></i>
-                    <p>Redes</p>
-                </div>
-
+                    <div class="textoAvaliacao">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem inventore aliquam et quas rem reiciendis quaerat, error </p>
+                    </div>
             </div>
-            <div id="textos">
-                <H1>Procure vagas por áreas </H1>
-                <p>Utilize nossos filtros ao lado para encontrar a vaga ideal.</p>
-            </div>
-
-
         </div>
+
+
     </main>
 
     <footer>
         <div id="logoFooter">
             <h1 class="findNome">FindLancer</h1>
         </div>
-        <div class="opcoes">
-            <p class="opcoes">Opção 1</p>
-            <p class="opcoes">Opção 2</p>
-            <p class="opcoes">Opção 3</p>
-        </div>
+
 
         <div class="cr">
             <p> &copy; FindLancer - Direitos Reservados</p>

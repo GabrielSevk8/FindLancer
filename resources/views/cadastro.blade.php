@@ -33,13 +33,13 @@
         </div>
 
         <div class="container">
-            <form action="/submit_form" method="post" onsubmit="return validarFormulario()">
+            <form action="/cadastroUsuario" method="POST" onsubmit="return validarFormulario()">
 
                 @csrf
 
                 <div class="box">
                     <label for="usuario">Usuário:</label>
-                    <input type="text" id="usuario" name="name" required>
+                    <input type="text" id="usuario" name="nome" required>
                 </div>
 
                 <div class="box">

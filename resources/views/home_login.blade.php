@@ -128,66 +128,51 @@
                 </h1>
                 <p>Veja ao lado as <span id="barra">vagas que selecionamos para você!</span> </p>
 
-                <button id="refresh"><i class="bi bi-arrow-clockwise"></i> Carregar Novas Vagas</button>
+                <button id="refresh"> Carregar Novas Vagas</button>
             </div>
         </div>
 
 
 
+        <div id="selecaoFiltros">
 
-        <div id="containerClientes">
-            <h1 id="tituloClientes">O que estão dizendo da FindLancer?</h1>
-            <div id="avaliacoes">
-                <div class="avaliacao">
-                    <div class="SuperiorAvaliacao">
-                        <img src="{{ asset( 'image/iconGuest.png')}}" alt="" class="guest">
-                        <div class="clientes">
-                            <h1>Cliente 1</h1>
-                            <img src="{{ asset( 'image/5stars.png')}}" alt="" class="stars">
-                        </div>
-
-                    </div>
-
-                    <div class="textoAvaliacao">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem inventore aliquam et quas rem reiciendis quaerat, error </p>
-                    </div>
-
-
-
-
+            <div id="listFiltros">
+                <div class="filtroCard">
+                    <i class="bi bi-code-slash"></i>
+                    <p>Front-End</p>
                 </div>
 
-                <div class="avaliacao">
-                    <div class="SuperiorAvaliacao">
-                        <img src="{{ asset( 'image/iconGuest.png')}}" alt="" class="guest">
-                        <div class="clientes">
-                            <h1>Cliente 1</h1>
-                            <img src="{{ asset( 'image/5stars.png')}}" alt="" class="stars">
-                        </div>
-
-                    </div>
-
-                    <div class="textoAvaliacao">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem inventore aliquam et quas rem reiciendis quaerat, error </p>
-                    </div>
-
+                <div class="filtroCard">
+                    <i class="bi bi-braces"></i>
+                    <p>Back-End</p>
                 </div>
 
-                <div class="avaliacao">
-                    <div class="SuperiorAvaliacao">
-                        <img src="{{ asset( 'image/iconGuest.png')}}" alt="" class="guest">
-                        <div class="clientes">
-                            <h1>Cliente 1</h1>
-                            <img src="{{ asset( 'image/5stars.png')}}" alt="" class="stars">
-                        </div>
+                <div class="filtroCard">
+                    <i class="bi bi-code-square"></i>
+                    <p>Full Stack</p>
+                </div>
 
-                    </div>
+                <div class="filtroCard">
+                    <i class="bi bi-cpu"></i>
+                    <p>Hardware</p>
+                </div>
 
-                    <div class="textoAvaliacao">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem inventore aliquam et quas rem reiciendis quaerat, error </p>
-                    </div>
+                <div class="filtroCard">
+                    <i class="bi bi-router"></i>
+                    <p>Redes</p>
+                </div>
+
             </div>
+            <div id="textos">
+                <H1>Procure vagas por áreas </H1>
+                <p>Utilize nossos filtros ao lado para encontrar a vaga ideal.</p>
+            </div>
+
+
         </div>
+
+
+
 
 
     </main>
@@ -197,9 +182,9 @@
             <img src="{{ asset( 'image/Findlancer_logo2.png')}}" alt="">
         </div>
         <div class="opcoes">
-            <p class="opcoes">Opção 1</p>
-            <p class="opcoes">Opção 2</p>
-            <p class="opcoes">Opção 3</p>
+            <p class="opcao1" >Opção 1</p>
+            <p class="opcao2" >Opção 2</p>
+            <p class="opcao3" >Opção 3</p>
         </div>
 
         <div class="cr">

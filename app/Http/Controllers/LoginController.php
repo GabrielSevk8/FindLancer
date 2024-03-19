@@ -10,7 +10,7 @@ use illuminate\Support\Facades\Auth;
 class LoginController extends Controller
 {
 
-    public function Login(Request $dadosLogin)
+    public function login(Request $dadosLogin)
     {
 
         $credenciais = $dadosLogin->only('email','password');

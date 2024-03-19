@@ -20,7 +20,7 @@
     scroll-behavior: smooth;
 }
 
-a
+header a
 {
     text-decoration: none;
     color: black;
@@ -82,6 +82,18 @@ header h2:hover
     width: 50%;
 }
 
+.opcoesHeader
+{
+    transition: transform ease-in-out 200ms;
+}
+
+.opcoesHeader:hover
+{
+    color: #860000;
+    transform: scale(1.04);
+
+}
+
 .findNome
 {
     font-family: titulo;
@@ -108,7 +120,7 @@ header h2:hover
     position: absolute;
     top: 0;
     margin-left: 3rem;
-    background-color: #c40001;
+    background-color: #860000;
     height: 101%;
     width: 20%;
     display: inherit;
@@ -117,11 +129,11 @@ header h2:hover
     cursor: pointer;
     color: white;
     border: none;
-    transition: background-color ease-in-out 150ms;
+    transition: background-color ease-in-out 200ms;
     text-decoration: none;
 }
 
-#login:hover
+.login:hover
 {
     background-color: #212121;
 }
@@ -187,6 +199,13 @@ header h2:hover
     color: white;
     margin-top: 1rem;
     display: none;
+    cursor: pointer;
+}
+
+#fundoContas button a
+{
+    text-decoration: none;
+    color: white;
 }
 #empresa
 {
@@ -252,75 +271,92 @@ header h2:hover
 
 
 
-#selecaoFiltros
+
+
+#containerClientes
+{
+    height: 65vh;
+    background-color: #860000;
+    color: white;
+    padding: 3%;
+}
+
+#tituloClientes
+{
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+#avaliacoes
 {
     display: flex;
-    height: 55vh;
-    background-color: #880101;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3% 1%;
+    justify-content: space-around;
+}
+
+.avaliacao
+{
+
+    height: 30vh;
+    width:30vw;
+    border: #7a7a7a solid 2px;
+    border-radius: 9px;
+    margin-top: 4rem;
+    background-color: white;
+    color: #860000;
+    padding:  1% 2.5%;
+    transition: transform ease-in-out 200ms;
 
 }
 
-#listFiltros
+.avaliacao:hover
+{
+    transform: scale(1.04);
+}
+
+.SuperiorAvaliacao
+{
+    margin: 2% 0;
+    padding: 0 2%;
+    display: flex;
+
+}
+
+
+.textoAvaliacao
 {
     display: inherit;
-    justify-content: space-between;
-    align-items: inherit;
-    height: 100%;
+    flex-direction: row;
+    color: black;
 }
 
-.filtroCard
+.stars
 {
-    background-color: white;
-    height: 62%;
-    width: 11vw;
-    padding: 2rem;
-    border: 2px solid black;
-    border-radius: 8px;
-    margin-left: 23px;
+    width: 5.5rem;
+    height: 70%;
+}
+
+.avaliacao .guest
+{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+
+
+#textoAvaliacao
+{
     display: inherit;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: transform ease-in-out 280ms;
-    cursor: pointer;
-}
-
-.filtroCard:hover
-{
-    transform: scale(1.15);
-}
-
-.filtroCard i
-{
-    font-size: 3rem;
-    color: #c70000;
 }
 
 
-.filtroCard >  p
-{
-    color: black;
 
-    text-align: center;
-}
 
-#textos p
-{
-    color: #e2e2e2;
-    font-size: 1.2rem;
-    margin-left: 25px;
-}
 
-#textos h1
-{
-    color: white;
-    font-size: 2rem;
-    border-radius: 8px;
-    margin: 1rem 25px;
-}
+
+
+
+
 
 
 footer
@@ -345,18 +381,24 @@ footer img:hover
     transform: scale(1.05);
 }
 
-
 .opcoes
 {
     display: flex;
     justify-content: space-between;
-    transition: color ease-in-out 250ms;
+    text-decoration: none;
+}
+.opcoesFooter
+{
+    transition: transform ease-in-out 250ms;
     cursor: pointer;
+    margin-left: 2rem;
 }
 
-.opcoes:hover
+.opcoesFooter:hover
 {
+    transform: scale(1.04);
     color: #c40001;
+
 }
 
 .opcoes p

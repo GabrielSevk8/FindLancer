@@ -8,20 +8,20 @@ use Illuminate\Routing\Controller;
 
 class CadastroController extends Controller
 {
-    public function cadastrarUsuario(Request $request )
+    public function cadastro(Request $request)
     {
         # objeto da classe User
         $usuario = new User();
 
         # enviando os valores
-        $usuario -> name = $request->input('name');
+        $usuario -> nome = $request->input('name');
         $usuario -> email = $request->input('email');
-        $usuario -> senha = bcrypt($request->input('senha'));
+        $usuario -> password = bcrypt($request->input('senha'));
         $usuario -> choose = $request->input('choose');
 
         # cadastra os dados no banco
         $usuario -> save();
 
-        return redirect('/Login');
+        return redirect('/login');
     }
 }

@@ -20,6 +20,7 @@
 
 a{
     text-decoration: none;
+    color: black;
 }
 
 .logout{
@@ -237,103 +238,8 @@ header h2:hover
 }
 
 
-/*Vagas Recomendadas*/
-
-.containerVagas
-{
-    background-color: white;
-
-    padding: 1%;
-    height: 65vh;
-    display: flex;
-    justify-content: space-around;
-    line-height: 1.8;
-}
-
-.textVagasRecomendadas .recomendado
-{
-    color: #700000;
-    font-size: inherit;
-    border: #212121 solid 2px;
-    border-radius: 50px;
-    padding: 3%;
-}
-
-.barra
-{
-    border-bottom: #860000 solid 2px !important;
-}
-
-.textVagasRecomendadas
-{
-    padding: 4% 3%;
-}
-
-.textVagasRecomendadas h1
-{
-    font-size: 2.3rem;
-    margin-bottom: 2rem;
-}
-
-.textVagasRecomendadas
-{
-    border-left: black 2px solid;
-    width: 50vw;
-    height: 100%;
-}
-
-.vagas
-{
-    display: inherit;
-    justify-content: space-around;
-    width: 100%;
-    height: 90%;
-    padding: 4% 0;
-}
-
-.vaga
-{
-    border: #5c6066 solid 1px;
-    border-radius: 8px;
-    padding: 2%;
-    width: 43%;
-}
-
-.linhaSuperiorVaga
-{
-    display: flex;
-}
 
 
-
-.vaga p
-{
-    font-size: 1rem;
-    color: #333333;
-}
-
-.vaga button
-{
-    cursor: pointer;
-    margin-top: 0.8rem;
-    padding: 2%;
-    border-radius: 8px;
-    background-color: #860000;
-    color: white;
-    border: none;
-}
-
-#refresh
-{
-    margin-top: 5%;
-    border: none;
-    padding: 5%;
-    width: 90%;
-    border-radius: 15px;
-    font-size: 2rem;
-    background-color: #860000;
-    color: white;
-}
 
 /* Avaliações */
 
@@ -343,7 +249,9 @@ header h2:hover
     background-color: #860000;
     color: white;
     padding: 3%;
+
 }
+
 
 .tituloClientes
 {
@@ -368,7 +276,12 @@ header h2:hover
     background-color: white;
     color: black;
     padding:  1% 2.5%;
+    transition: transform ease-in-out 200ms;
+}
 
+.avaliacao:hover
+{
+    transform: scale(1.04);
 }
 
 
