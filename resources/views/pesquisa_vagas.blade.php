@@ -7,6 +7,7 @@
     <title>Findlancer</title>
     <link rel="stylesheet" href="{{ asset('css/pesquisa_vagas.css')}}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="{{ asset('image/iconSite.png') }}">
 </head>
 <body>
 
@@ -26,7 +27,7 @@
         <div id="ldireitoHead" class="ladoHead">
             <form action="">
                 <i class="bi bi-search lupa "></i>
-                <input type="text" placeholder="Pesquise Vagas Aqui" class="pesquisa">
+                <input type="text" placeholder="Pesquise Vagas Aqui" class="pesquisa" name="pesquisa">
 
             </form>
 

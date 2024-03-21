@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Minhas Vagas</title>
     <link rel="stylesheet" href="{{ asset('css/minhas_vagas.css')}}">
+    <link rel="shortcut icon" href="{{ asset('image/iconSite.png') }}">
 </head>
 <body>
 

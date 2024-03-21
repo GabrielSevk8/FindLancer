@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset( 'css/cadastro.css' ) }}">
     <title>Cadastro</title>
-    <link rel="shortcut icon" href="{{ asset('image/Findlancer_logo3.png') }}">
+    <link rel="shortcut icon" href="{{ asset('image/iconSite.png') }}">
 </head>
 <body>
     <script>

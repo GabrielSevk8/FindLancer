@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
     <link rel="stylesheet" href="{{('css/homeEmp.css')}}">
+    <link rel="shortcut icon" href="{{ asset('image/iconSite.png') }}">
 </head>
 <body>
     <header>
         <div id="lesquerdoHead" class="ladoHead">
             <h1>Findlancer - Empresas</h1>
-            <a href="#criacaoContas"><h1 class="opcoesHeader">Crie Vagas</h1></a>
+            <a href="/cadastro_vagas"><h1 class="opcoesHeader">Crie Vagas</h1></a>
 
         </div>
 

@@ -16,7 +16,7 @@ class LoginController extends Controller
         $credenciais = $dadosLogin->only('email','password');
 
     //NAO!!
-    //MECHE!!
+    //MEXA!!
     //NISSO!!
     //APRECIE O PODER DO Phind
 

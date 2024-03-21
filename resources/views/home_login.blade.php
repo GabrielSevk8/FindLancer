@@ -7,6 +7,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="{{('css/homeLogin.css')}}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="{{ asset('image/iconSite.png') }}">
 </head>
 <body>
     <header>
@@ -57,9 +58,9 @@
         </div>
 
         <div id="ldireitoHead" class="ladoHead">
-            <form action="">
+            <form action="/pesquisa_vagas" method="POST">
                 <i class="bi bi-search lupa "></i>
-                <input type="text" placeholder="Pesquise Vagas Aqui" class="pesquisa">
+                <input type="text" placeholder="Pesquise Vagas Aqui" class="pesquisa" name="pesquisa">
 
             </form>
 
@@ -101,26 +102,23 @@
 
         <div id="containerVagas">
 
+            @foreach ( $todasVagas as $vaga )
+
+
 
             <div id="vagas">
                 <div class="vaga">
-                    <h1 class="tituloVaga">{vaga.titulo}</h1>
-                    <h1>Nome empresa</h1>
-                    <p>De R$1.000,00 a R$ 2.000,00</p>
-                    <p><strong>1</strong> Vaga (S)</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsum ducimus praesentium optio ipsa recusandae ipsam. Vel, vitae perspiciatis</p>
-                    <button>Vaga Completa</button>
-                </div>
-
-                <div class="vaga">
-                <h1 class="tituloVaga">Titulo Vaga</h1>
-                    <h1>Nome empresa</h1>
-                    <p>De R$1.000,00 a R$ 2.000,00</p>
-                    <p><strong>1</strong> Vaga (S)</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsum ducimus praesentium optio ipsa recusandae ipsam. Vel, vitae perspiciatis</p>
+                    <h1 class="tituloVaga">{{ $vaga->tItulo_vaga }}</h1>
+                    <h1>{{ $vaga->nome_empresa }}</h1>
+                    <p>R${{ $vaga->salario }}</p>
+                    <!--<p><strong></strong> Vaga (S)</p>-->
+                    <p>{{ $vaga->descricao }}</p>
                     <button>Vaga Completa</button>
                 </div>
             </div>
+
+
+            @endforeach
 
             <div id="textVagasRecomendadas">
                 <h1>Vagas
@@ -196,22 +194,43 @@
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <h3>"Sobre Nós"</h3>
-                <h3>Bem-vindo ao Findlancer, o seu destino primordial para conexões significativas no mundo da tecnologia da informação (TI). Aqui no Findlancer, estamos apaixonados por promover oportunidades inovadoras e facilitar a união entre talentos excepcionais e projetos desafiadores.
+                <h1><strong>Bem-vindo ao Findlancer</strong></h1>
 
-                Nosso compromisso é criar uma plataforma dinâmica e acessível que permita aos profissionais de TI explorar novos horizontes e alcançar todo o seu potencial. Desde desenvolvedores de software até especialistas em segurança cibernética, passando por designers de UX/UI e muito mais, o Findlancer é o seu ponto de partida para encontrar as oportunidades que melhor se alinham com suas habilidades e aspirações.
+    <p>O seu destino primordial para conexões significativas no mundo da tecnologia da informação (TI).</p>
 
-                O que nos diferencia no cenário competitivo dos sites de empregos é nossa abordagem centrada no indivíduo. Entendemos que cada profissional de TI é único, com suas próprias experiências, interesses e metas. É por isso que buscamos oferecer uma experiência personalizada, fornecendo recursos e ferramentas que capacitam você a tomar as melhores decisões para sua carreira.
+    <p>Aqui no Findlancer, estamos apaixonados por promover oportunidades inovadoras e facilitar a união entre talentos excepcionais e projetos desafiadores.</p>
 
-                Além disso, no Findlancer, priorizamos a transparência, a integridade e o respeito. Estamos comprometidos em proteger a privacidade e os interesses de nossos usuários, proporcionando um ambiente seguro e confiável para conectar talentos e empresas.
+    <h2>Nossa Missão</h2>
 
-                Quer você esteja procurando por um projeto freelance emocionante, uma oportunidade de emprego em tempo integral ou simplesmente queira explorar o que o mercado tem a oferecer, o Findlancer está aqui para ajudá-lo a alcançar seus objetivos.
+    <p>Nosso compromisso é criar uma plataforma dinâmica e acessível que permita aos profissionais de TI explorar novos horizontes e alcançar todo o seu potencial.</p>
 
-                Junte-se a nós e faça parte de uma comunidade vibrante de profissionais de TI dedicados a impulsionar a inovação e a excelência em todo o mundo. O futuro está nas suas mãos, e no Findlancer, estamos aqui para ajudá-lo a moldá-lo conforme sua visão.
+    <p>Desde desenvolvedores de software até especialistas em segurança cibernética, passando por designers de UX/UI e muito mais, o Findlancer é o seu ponto de partida para encontrar as oportunidades que melhor se alinham com suas habilidades e aspirações.</p>
 
-                Explore, conecte-se e avance em sua jornada de carreira com o Findlancer. Estamos ansiosos para fazer parte da sua história de sucesso.
+    <h2>Nossa Abordagem</h2>
 
-                Seja bem-vindo ao Findlancer - O seu portal para um mundo de oportunidades na tecnologia da informação.</h3>
+    <p>O que nos diferencia no cenário competitivo dos sites de empregos é nossa abordagem centrada no indivíduo.</p>
 
+    <p>Entendemos que cada profissional de TI é único, com suas próprias experiências, interesses e metas.</p>
+
+    <p>É por isso que buscamos oferecer uma experiência personalizada, fornecendo recursos e ferramentas que capacitam você a tomar as melhores decisões para sua carreira.</p>
+
+    <h2>Nossos Valores</h2>
+
+    <p>Além disso, no Findlancer, priorizamos a transparência, a integridade e o respeito.</p>
+
+    <p>Estamos comprometidos em proteger a privacidade e os interesses de nossos usuários, proporcionando um ambiente seguro e confiável para conectar talentos e empresas.</p>
+
+    <h2>Nossa Visão</h2>
+
+    <p>Quer você esteja procurando por um projeto freelance emocionante, uma oportunidade de emprego em tempo integral ou simplesmente queira explorar o que o mercado tem a oferecer, o Findlancer está aqui para ajudá-lo a alcançar seus objetivos.</p>
+
+    <p>Junte-se a nós e faça parte de uma comunidade vibrante de profissionais de TI dedicados a impulsionar a inovação e a excelência em todo o mundo.</p>
+
+    <p>O futuro está nas suas mãos, e no Findlancer, estamos aqui para ajudá-lo a moldá-lo conforme sua visão.</p>
+
+    <h2>Seja bem-vindo ao Findlancer</h2>
+
+    <p>O seu portal para um mundo de oportunidades na tecnologia da informação.</p>
             </div>
         </div>
 

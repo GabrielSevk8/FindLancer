@@ -1,9 +1,13 @@
 <?php
 
+use App\Http\Controllers\CadastraVagaController;
 use App\Http\Controllers\CadastroController;
 use App\Http\Controllers\GoogleAuthController;
 use App\Http\Controllers\LoginController;# importando a classe Controller
+use App\Http\Controllers\PesquisaController;
 use Illuminate\Support\Facades\Route;
+
+
 
 
 
@@ -47,37 +51,41 @@ Route::get('/cadastro', function ()
     return view('cadastro');
 });
 
+//rota: sistema cadastrar
 Route::post('/cadastroUsuario', [CadastroController::class, 'cadastro']);
 
 //rota: Home/Perfil
-Route::get('/home_login', function()
-{
-    return view('home_login');
-})->middleware('auth');
+Route::get('/home_login', [PesquisaController::class, 'pesquisar5Vagas'])->middleware('auth');
 
 Route::get('/home_emp', function()
 {
     return view('home_emp');
 })->middleware('auth');
 
-Route::get('/pesquisa_vagas', function()
-{
-    return view('pesquisa_vagas');
-});
+//rota: pesquisa vaga
+Route::post('/pesquisa_vagas', [PesquisaController::class,"pesquisarVagas"]);
+
+//rota: cadastrar vagas
+Route::post('/cadastro_vagas', [CadastraVagaController::class, "CadastrarVagas"]);
 
 Route::get('/minhas_vagas', function()
 {
     return view ('minhas_vagas');
 });
 
-Route::get('/home_emp/criar_vagas', function()
+Route::get('/cadastro_vagas', function()
 {
-    return view('criar_vagas');
+    return view('cadastro_vagas');
 });
 
 Route::get('/minhas_vagas', function()
 {
     return view('minhas_vagas');
+});
+
+Route::get('/cadastro_vagas', function()
+{
+    return view('cadastro_vagas');
 });
 
 
