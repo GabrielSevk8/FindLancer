@@ -51,8 +51,11 @@ Route::get('/cadastro', function ()
     return view('cadastro');
 });
 
-//rota: sistema cadastrar
+//rota: Criar Cadastro
 Route::post('/cadastroUsuario', [CadastroController::class, 'cadastro']);
+
+//rota: Atualizar Cadastro
+Route::post('/updateUsuario', [CadastroController::class, 'update']);
 
 //rota: Home/Perfil
 Route::get('/home_login', [PesquisaController::class, 'pesquisar5Vagas'])->middleware('auth');

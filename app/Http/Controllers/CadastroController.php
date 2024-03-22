@@ -24,4 +24,23 @@ class CadastroController extends Controller
 
         return redirect('/login');
     }
+
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'nome' => 'sometime|max:255',
+            'email' => 'sometime|email|unique:users,email,' . Auth::$id,
+            'password' => 'sometimes|min:8',
+        ]);
+        $user=Auth::user();
+        $user->update([
+            'nome' => $request->nome,
+            'email' => $request->email,
+            'password' => $request->password ? bcrypt($request->password) : $user->password,
+        ]);
+
+        return redirect()->route('/home_login')->with('success', 'Post updated successfully.');
+    }
+
+
 }

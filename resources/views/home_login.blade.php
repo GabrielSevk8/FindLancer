@@ -33,18 +33,18 @@
                 </ul>
 
                 <!-- Formulários de atualização de dados -->
-                <form id="formAtualizarNome" class="form">
-                    <input type="text" placeholder="Novo Nome" required>
+                <form action="/update" id="formAtualizarNome" class="form">
+                    <input name="nome" type="text" placeholder="Novo Nome" required>
                     <input type="submit" value="Atualizar Nome">
                 </form>
 
-                <form id="formAtualizarEmail" class="form">
-                    <input type="email" placeholder="Novo Email" required>
+                <form action="/update" id="formAtualizarEmail" class="form">
+                    <input name="email" type="email" placeholder="Novo Email" required>
                     <input type="submit" value="Atualizar Email">
                 </form>
 
-                <form id="formAtualizarSenha" class="form">
-                    <input type="password" placeholder="Nova Senha" required>
+                <form action="/update" id="formAtualizarSenha" class="form">
+                    <input name="password" type="password" placeholder="Nova Senha" required>
                     <input type="password" placeholder="Confirme a Nova Senha" required>
                     <input type="submit" value="Atualizar Senha">
                 </form>
@@ -65,8 +65,9 @@
             </form>
 
             <div id="login" class="sidenav">
-                *Usuario*
-            </div>
+                <!-- Aqui será exibido o nome do usuário -->
+                <p>Ola </p>
+           </div>
         </div>
     </header>
 
@@ -97,22 +98,47 @@
             </div>
         </section>
 
-
-
-
+        <div id="tituloVaga">
+            <h1>Veja algumas de nossas vagas</h1>
+        </div>
         <div id="containerVagas">
 
             @foreach ( $todasVagas as $vaga )
 
+                <div id="vagas">
+                    <div class="vaga">
+                        <h1 class="tituloVaga">{{ $vaga->tItulo_vaga }}</h1>
+                        <h1>{{ $vaga->nome_empresa }}</h1>
+                        <p>R${{ $vaga->salario }}</p>
+                        <!--<p><strong></strong> Vaga (S)</p>-->
+                        <p>{{ $vaga->descricao }}</p>
+                        <button>Vaga Completa</button>
+                    </div>
+                </div>
 
 
-            <div id="vagas">
+            @endforeach
+
+        </div>
+
+
+
+        <!--<div id="containerVagas">
+
+            <div id="tituloVagas">
+                <h1>Melhores Vagas</h1>
+            </div>
+            @foreach ( $todasVagas as $vaga )
+
+
+
+            <div id="vagas"></div>
                 <div class="vaga">
                     <h1 class="tituloVaga">{{ $vaga->tItulo_vaga }}</h1>
                     <h1>{{ $vaga->nome_empresa }}</h1>
                     <p>R${{ $vaga->salario }}</p>
-                    <!--<p><strong></strong> Vaga (S)</p>-->
-                    <p>{{ $vaga->descricao }}</p>
+                    <! -<p><strong></strong> Vaga (S)</p>- ->
+                    <p class="elipses">{{ $vaga->descricao }}</p>
                     <button>Vaga Completa</button>
                 </div>
             </div>
@@ -120,15 +146,11 @@
 
             @endforeach
 
-            <div id="textVagasRecomendadas">
-                <h1>Vagas
-                    <span id="recomendado">Recomendadas</span>
-                </h1>
-                <p>Veja ao lado as <span id="barra">vagas que selecionamos para você!</span> </p>
 
-                <button id="refresh"> Carregar Novas Vagas</button>
-            </div>
         </div>
+
+        !-->
+
 
 
 
@@ -352,7 +374,23 @@
             formAtualizarSenha.classList.remove("active");
             formUploadArquivo.classList.add("active");
         }
+
+        var $Usuario = nome;
+
+        // Seleciona o elemento com o ID "login"
+        var loginDiv = document.getElementById("login");
+
+        // Define o conteúdo desse elemento para o nome do usuário
+        loginDiv.innerHTML = $Usuario;
+
     </script>
 
 </body>
 </html>
+
+
+
+
+
+
+
