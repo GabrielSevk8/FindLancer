@@ -54,8 +54,6 @@ Route::get('/cadastro', function ()
 //rota: Criar Cadastro
 Route::post('/cadastroUsuario', [CadastroController::class, 'cadastro']);
 
-//rota: Atualizar Cadastro
-Route::post('/updateUsuario', [CadastroController::class, 'update']);
 
 //rota: Home/Perfil
 Route::get('/home_login', [PesquisaController::class, 'pesquisar5Vagas'])->middleware('auth');
@@ -76,6 +74,11 @@ Route::get('/minhas_vagas', function()
     return view ('minhas_vagas');
 });
 
+Route::get('/meus_dados', function()
+{
+    return view ('meus_dados');
+});
+
 Route::get('/cadastro_vagas', function()
 {
     return view('cadastro_vagas');
@@ -92,7 +95,6 @@ Route::get('/cadastro_vagas', function()
 });
 
 
-//usua
 //usuario: mtreutel@gmail.com
 //senha: 1234
 

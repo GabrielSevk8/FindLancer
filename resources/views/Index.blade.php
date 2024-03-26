@@ -64,7 +64,7 @@
                         utilize nossos filtros para buscara vaga ideal, usando
                         uma interface fácil de intuitiva.
                     </p>
-                    <button><a href="/cadastro">Criar Conta Empresa</a></button>
+                    <button><a href="/cadastro">Criar Conta Freelancer</a></button>
                 </div>
             </div>
 

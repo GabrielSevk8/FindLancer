@@ -21,7 +21,7 @@ class PesquisaController extends Controller
     {
         $vagas = new Vaga();
 
-        $todasVagas = $vagas::all()->take(5);
+        $todasVagas = $vagas::all()->take(4);
         return view('/home_login', compact('todasVagas'));
 
     }

@@ -21,7 +21,7 @@
             <a class="logout" href="/logout"><h2>Sair</h2></a>
 
             <div class="login">
-                *Empresa*
+                <p><span id="nomeUsuario">{{ Auth::user()->nome }}</span></p>
             </div>
         </div>
     </header>
@@ -38,7 +38,14 @@
                     <div class="caixaCriar">
                         <button class="botaoCriar">
 
-                            <i class="bi bi-search "></i><h1 id="txtBotao">Criar Vagas</h1>
+                            <a href="/cadastro_vagas">
+                                <h1 id="txtBotao">Crie Vagas</h1>
+                            </a>
+
+
+                           <!-- <i class="bi bi-search "></i><h1 id="txtBotao">Criar Vagas</h1>!-->
+
+
                         </button>
                     </div>
                 </div>

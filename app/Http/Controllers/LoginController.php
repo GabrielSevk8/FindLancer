@@ -34,8 +34,12 @@ class LoginController extends Controller
             return back()->with("error", "Usuário ou senha incorretos!");
         }
 
+    }
 
-
+    public function index()
+    {
+        $user = Auth::user();
+        return view('Bem-vindo', ['users' => $user]);
     }
 
     public function sair()

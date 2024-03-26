@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Foundation\Auth\User;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class CadastroController extends Controller
 {
@@ -25,22 +26,28 @@ class CadastroController extends Controller
         return redirect('/login');
     }
 
-    public function update(Request $request, $id)
+    public function pegaUser( $id )
     {
-        $request->validate([
-            'nome' => 'sometime|max:255',
-            'email' => 'sometime|email|unique:users,email,' . Auth::$id,
-            'password' => 'sometimes|min:8',
-        ]);
-        $user=Auth::user();
-        $user->update([
-            'nome' => $request->nome,
-            'email' => $request->email,
-            'password' => $request->password ? bcrypt($request->password) : $user->password,
-        ]);
+        $usuario = new User();
 
-        return redirect()->route('/home_login')->with('success', 'Post updated successfully.');
+        $usuarioEditar = $usuario::where('id','=',$id)->get();
+
+        return view('meus_dados')
+        -> with('editar', '')
+        -> with('id', $id)
+        -> with('usuarioEdit', $usuarioEditar);
     }
 
+    public function alteraUser (Request $request)
+    {
+        $usuario = User::findOrFail ($id);
+        $usuario -> nome = $request->input('name');
+        $usuario -> email = $request->input('email');
+        $usuario -> password = bcrypt($request->input('senha'));
+
+        $usuario -> save();
+
+        return redirect('/meus_dados');
+    }
 
 }

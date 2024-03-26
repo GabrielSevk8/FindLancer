@@ -88,21 +88,23 @@ header h2:hover
     justify-content: space-between;
 }
 
+#lesquerdoHead a
+{
+    transition: transform ease-in-out 280ms;
+
+}
+
+#lesquerdoHead a:hover
+{
+    transform: scale(1.03);
+
+}
+
 #ldireitoHead{
     display: flex;
     justify-content: flex-end;
 }
 
-#ldireitoHead form
-{
-    display: flex;
-    align-items: center;
-    padding: 0 2%;
-    border-radius: 10px;
-    border: 2px solid black;
-    width: 55%;
-    margin:  0 2.5rem;
-}
 
 
 
@@ -143,7 +145,7 @@ header h2:hover
     padding: 1rem;
 }
 
-/* Hero*/
+/*Hero*/
 
 
 .hero
@@ -189,7 +191,7 @@ header h2:hover
 {
     background-color: white;
     color: black;
-    padding: 2.5%;
+    padding: 2%;
     width: 58%;
     margin-top: 1rem;
     border-radius: 8px;
@@ -207,37 +209,42 @@ header h2:hover
     font-size: 50px;
 }
 
-.caixaCriar form
-{
-    width: 50%;
-}
 
-.caixaCriar form input
-{
-    width: 100%;
-    margin-right: 10px; /* Espaçamento entre input e botão, ajuste conforme necessário */
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 10px; /* Ajuste conforme necessário */
-}
 
-.botaoCriar {
+
+
+.botaoCriar
+{
     display: flex;
-    width: 50%; /* Largura desejada para o botão, ajuste conforme necessário */
-    background-color: #c40001;
+    width: 40%;
+    background-color: #860000;
     border-radius: 5px;
     color: white;
     cursor: pointer;
-    padding: 10px; /* Ajuste conforme necessário */
-    margin-left: 0px;
+    padding: 10px;
+    height: 50%;
+    transition: transform ease-in-out 280ms;
 }
 
-.txtBotao
+.botaoCriar:hover
 {
-    margin-left: 5px; /* Ajuste conforme necessário */
+    transform: scale(1.03);
+    background-color: #272727;
 }
 
 
+#txtBotao
+{
+
+    color: white;
+}
+
+.botaoCriar a
+{
+    width: 100%;
+    text-align: center;
+
+}
 
 
 
