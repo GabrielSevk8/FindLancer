@@ -40,7 +40,7 @@ Route::get('/auth/google',[GoogleAuthController::class, 'redirectToProvider']);
 //Route::get('/auth/google/callback',[GoogleAuthController::class, 'autenticaCallBack']);
 
 //validação de login
-Route::post('/valida', [LoginController::class, 'Login'])->name('valida');
+Route::post('/valida', [LoginController::class, 'login'])->name('valida');
 
 //logout de uma conta
 Route::get('/logout', [LoginController::class,'Sair'])->name('logout');
@@ -73,6 +73,10 @@ Route::get('/minhas_vagas', function()
 {
     return view ('minhas_vagas');
 });
+
+Route::post('/meus_dados', [CadastroController::class, 'alteraNome'])->name('meus.dados');
+Route::post('/meus_dados', [CadastroController::class, 'alteraEmail'])->name('meus.dados');
+Route::post('/meus_dados', [CadastroController::class, 'alteraSenha'])->name('meus.dados');
 
 Route::get('/meus_dados', function()
 {

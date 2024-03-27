@@ -48,9 +48,7 @@ p
 
 header
 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
     padding: 0.5rem 0;
     padding-left: 2rem;
     position: sticky;
@@ -58,6 +56,13 @@ header
     background-color: white;
     z-index: 1;
     border-bottom: 1px #212121 solid;
+}
+
+.containerHeader
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header h2
@@ -82,6 +87,13 @@ header h2:hover
     width: 50%;
 }
 
+.headerOpcoes
+{
+    display: inherit;
+    justify-content: space-around;
+    width: 70%;
+}
+
 .opcoesHeader
 {
     transition: transform ease-in-out 200ms;
@@ -94,6 +106,11 @@ header h2:hover
 
 }
 
+#nomeCel
+{
+    display: none;
+}
+
 .findNome
 {
     font-family: titulo;
@@ -101,6 +118,7 @@ header h2:hover
     cursor: pointer;
     transition: transform ease-in-out 300ms;
     margin-right: 2rem;
+    display: block;
 }
 
 .findNome:hover
@@ -507,4 +525,101 @@ footer img:hover
     right:0;
     margin-left: 3%;
   }
+
+@media (max-width: 576px)
+{
+    header
+    {
+        padding: 2% 5%;
+        height: 18vh;
+        display: block;
+    }
+
+    .containerHeader
+    {
+        display: flex;
+        height: 80%;
+
+    }
+
+    .ladoHead
+    {
+        height: 80px;
+    }
+
+    #lesquerdo
+    {
+        margin-right: 15px;
+    }
+    #ldireito a
+    {
+        height: 83%;
+        width: 100%;
+    }
+
+
+    #nomePc
+    {
+        display: none;
+    }
+
+    #nomeCel
+    {
+        display: block;
+    }
+
+
+
+    .findNome
+    {
+        font-size: 2rem;
+        margin: 0;
+        width: 100%;
+        display: block;
+    }
+    .login
+    {
+
+        position: relative;
+    }
+
+
+    .headerOpcoes
+    {
+        display: flex;
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    .headerOpcoes a
+    {
+        display: inherit;
+        background-color: #860000;
+        color: white;
+        padding: 5% 3%;
+        margin-left: 0;
+        border-radius: 6px;
+        margin-top: 15px;
+    }
+
+
+    .headerOpcoes h1
+    {
+        font-size: 0.9rem;
+
+    }
+    .headerOpcoes,.ladoHead
+    {
+        text-align: center;
+        width: 100%;
+    }
+
+    .headerOpcoes h1
+    {
+
+    }
+
+
+}
+
 

@@ -21,19 +21,29 @@
 </head>
 <body>
     <header>
-        <div id="lesquerdo" class="ladoHead">
+        <h1 class="findNome" id="nomeCel">FindLancer</h1>
+        <div class="containerHeader">
+            <h1 class="findNome" id="nomePc">FindLancer</h1>
+            <div id="lesquerdo" class="ladoHead">
+                <div class="headerOpcoes">
+                    <a href="#criacaoContas"><h1 class="opcoesHeader">Crie sua Conta</h1></a>
+                    <a href="#containerClientes"><h1 class="opcoesHeader">Avaliacões</h1></a>
+                </div>
 
-            <h1 class="findNome">FindLancer</h1>
-            <a href="#criacaoContas"><h1 class="opcoesHeader">Crie sua Conta</h1></a>
-            <a href="#containerClientes"><h1 class="opcoesHeader">Avaliacões dos Clientes</h1></a>
 
+            </div>
+
+            <div id="ldireito" class="ladoHead">
+                <div class="headerOpcoes">
+                    <a href="/login" class="login">
+                        <h1>ACESSE SUA CONTA</h1>
+                    </a>
+                </div>
+
+
+            </div>
         </div>
 
-        <div id="ldireito" class="ladoHead">
-            <a href="/login" class="login">
-                <h1>ACESSE SUA CONTA</h1>
-            </a>
-        </div>
     </header>
 
     <main>

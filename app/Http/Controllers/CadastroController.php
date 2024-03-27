@@ -26,7 +26,7 @@ class CadastroController extends Controller
         return redirect('/login');
     }
 
-    public function pegaUser( $id )
+    public function pegaUser(Request $id )
     {
         $usuario = new User();
 
@@ -38,16 +38,45 @@ class CadastroController extends Controller
         -> with('usuarioEdit', $usuarioEditar);
     }
 
-    public function alteraUser (Request $request)
+    public function alteraNome(Request $request)
     {
-        $usuario = User::findOrFail ($id);
-        $usuario -> nome = $request->input('name');
-        $usuario -> email = $request->input('email');
-        $usuario -> password = bcrypt($request->input('senha'));
+        dd('metodo chamado');
+        $request->validate([
+            'nome' => 'required|string',
+        ]);
 
-        $usuario -> save();
+        $usuario = Usuario::pegaUser($id);
+        $usuario->nome = $request->input('nome');
+        $usuario->save();
 
-        return redirect('/meus_dados');
+
+        return view('home_login')->with('success', 'Nome do usuário atualizado com sucesso!');
+    }
+
+    public function alteraEmail(Request $request)
+    {
+        $request->validate([
+            'email' => 'required|email',
+        ]);
+
+        $usuario = Usuario::findOrFail($id);
+        $usuario->email = $request->input('email');
+        $usuario->save();
+
+        return redirect()->back()->with('success', 'E-mail do usuário atualizado com sucesso!');
+    }
+
+    public function alteraSenha(Request $request)
+    {
+        $request->validate([
+            'senha' => 'required|string|min:6',
+        ]);
+
+        $usuario = Usuario::findOrFail($id);
+        $usuario->senha = bcrypt($request->input('senha'));
+        $usuario->save();
+
+        return redirect()->back()->with('success', 'Senha do usuário atualizada com sucesso!');
     }
 
 }

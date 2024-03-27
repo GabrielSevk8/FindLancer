@@ -36,7 +36,7 @@
     <main>
         <div class="cadastro">
             <h1>Alterar Dados Pessoais</h1>
-            <form action="" method="POST">
+            <form action="/meus_dados" method="post">
                 @csrf
                 <label for="usuario">Usuário:</label>
                 <input type="text" id="usuario" name="nome">
@@ -44,10 +44,8 @@
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email">
 
-
                 <label for="senha">Senha:</label>
                 <input type="password" id="senha" name="senha">
-
 
                 <button type="submit"> Atualizar </button>
 
