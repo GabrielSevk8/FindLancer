@@ -1,0 +1,32 @@
+body
+{
+    color: #566787;
+    background: #f5f5f5;
+    font-family: "Varela Round", sans-serif;
+    font-size: 13px;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    background: #e7e2e2;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.container p
+{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.conteudo
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #fff;
+    margin: 10px;
+    border-radius: 10px;
+}

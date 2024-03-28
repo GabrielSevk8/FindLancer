@@ -21,9 +21,10 @@
 </head>
 <body>
     <header>
-        <h1 class="findNome" id="nomeCel">FindLancer</h1>
+
         <div class="containerHeader">
             <h1 class="findNome" id="nomePc">FindLancer</h1>
+
             <div id="lesquerdo" class="ladoHead">
                 <div class="headerOpcoes">
                     <a href="#criacaoContas"><h1 class="opcoesHeader">Crie sua Conta</h1></a>
@@ -51,12 +52,15 @@
             <div id="imgHero">
 
             </div>
+            <div class="bannerCelular">
+
+            </div>
         </div>
 
 
         <div id="criacaoContas">
             <div id="fundoContas">
-                <div id="empresa">
+                <div id="empresa" class="contas">
                     <p>Para sua</p>
                     <h1>Empresa</h1>
 
@@ -67,7 +71,7 @@
 
                     <button> <a href="/cadastro">Criar Conta Empresa</a></button>
                 </div>
-                <div id="cliente">
+                <div id="cliente" class="contas">
                     <p>Para</p>
                     <h1>Você</h1>
                     <p>Veja vagas destinadas ao seu perfil como free-lancer,

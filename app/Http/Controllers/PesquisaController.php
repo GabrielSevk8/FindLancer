@@ -2,11 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\Vaga;
 use Illuminate\Http\Request;
 
 class PesquisaController extends Controller
 {
+
+
+
+
+
 
     public function pesquisarTodasVagas()
     {

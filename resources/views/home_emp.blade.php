@@ -11,8 +11,8 @@
 <body>
     <header>
         <div id="lesquerdoHead" class="ladoHead">
-            <h1>Findlancer - Empresas</h1>
-            <a href="/cadastro_vagas"><h1 class="opcoesHeader">Crie Vagas</h1></a>
+            <h1>Find Empresas</h1>
+            <a href="/cadastro_vagas"><h1 class="opcoesHeader crieVagas">Crie Vagas</h1></a>
 
         </div>
 

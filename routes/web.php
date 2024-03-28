@@ -74,14 +74,20 @@ Route::get('/minhas_vagas', function()
     return view ('minhas_vagas');
 });
 
-Route::post('/meus_dados', [CadastroController::class, 'alteraNome'])->name('meus.dados');
-Route::post('/meus_dados', [CadastroController::class, 'alteraEmail'])->name('meus.dados');
-Route::post('/meus_dados', [CadastroController::class, 'alteraSenha'])->name('meus.dados');
+/*
+Route::post('/meus_dados', [CadastroController::class, 'alteraNome']);
+Route::post('/meus_dados', [CadastroController::class, 'alteraEmail']);
+Route::post('/meus_dados', [CadastroController::class, 'alteraSenha']);
+*/
 
-Route::get('/meus_dados', function()
-{
-    return view ('meus_dados');
-});
+Route::post('/atualizar', [CadastroController::class, 'atualizar']);
+
+Route::post('/pega_user', [CadastroController::class, 'pegaUser']);
+
+Route::get('/painel_usuarios', [CadastroController::class ,'index']);
+Route::get('/painel_usuarios/edicao_usuario/{id}', [CadastroController::class ,'pegaUser']);
+
+
 
 Route::get('/cadastro_vagas', function()
 {

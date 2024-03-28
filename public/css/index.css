@@ -137,6 +137,7 @@ header h2:hover
 {
     position: absolute;
     top: 0;
+    right: 0;
     margin-left: 3rem;
     background-color: #860000;
     height: 101%;
@@ -154,6 +155,7 @@ header h2:hover
 .login:hover
 {
     background-color: #212121;
+    color: white;
 }
 
 
@@ -171,6 +173,11 @@ header h2:hover
     height: 70vh; /* Use 'vh' para 100% da altura da viewport */
     width: 100vw;
     z-index: -1;
+}
+
+.bannerCelular
+{
+    display: none;
 }
 
 #criacaoContas
@@ -521,103 +528,152 @@ footer img:hover
     cursor: pointer;
     font-size: 5rem;
     position: absolute;
+    margin-bottom: 7%;
     top: 0;
     right:0;
-    margin-left: 3%;
+
   }
 
-@media (max-width: 576px)
+@media (max-width:700px)
 {
-    header
-    {
-        padding: 2% 5%;
-        height: 18vh;
-        display: block;
-    }
-
-    .containerHeader
-    {
-        display: flex;
-        height: 80%;
-
-    }
-
-    .ladoHead
-    {
-        height: 80px;
-    }
-
-    #lesquerdo
-    {
-        margin-right: 15px;
-    }
-    #ldireito a
-    {
-        height: 83%;
-        width: 100%;
-    }
-
-
-    #nomePc
+    .opcoesHeader, .ladoHead, #ldireito, .cr, .login, #imgHero
     {
         display: none;
     }
 
-    #nomeCel
+    #nomeCel, .bannerCelular
     {
-        display: block;
+        display: inline;
     }
 
+    header
+    {
+        padding: 7%;
+    }
 
+    .containerHeader
+    {
+        justify-content: center;
+    }
 
     .findNome
     {
-        font-size: 2rem;
         margin: 0;
+    }
+
+    .bi
+    {
+        font-size: 1.5rem;
+    }
+
+    /*Img*/
+    .bannerCelular
+    {
         width: 100%;
-        display: block;
-    }
-    .login
-    {
-
-        position: relative;
-    }
-
-
-    .headerOpcoes
-    {
-        display: flex;
-        justify-content: space-around;
         height: 100%;
     }
 
-    .headerOpcoes a
+
+
+    /*Criação Contas */
+
+    #criacaoContas
     {
-        display: inherit;
-        background-color: #860000;
-        color: white;
-        padding: 5% 3%;
-        margin-left: 0;
-        border-radius: 6px;
-        margin-top: 15px;
+        height: 100%;
+    }
+    #fundoContas
+    {
+        display: block;
+        width: 100%;
+        padding: 5%;
+        height: 100%;
     }
 
-
-    .headerOpcoes h1
+    .contas
     {
-        font-size: 0.9rem;
-
+        width: 100% !important;
+        border-bottom: black 2px solid;
     }
-    .headerOpcoes,.ladoHead
+
+    /*Avaliações Clientes */
+
+    #containerClientes
     {
-        text-align: center;
+        height: 100%;
+    }
+
+    #avaliacoes
+    {
+        display: block;
+    }
+
+    .avaliacao
+    {
+        width: 100%;
+        height: 100%;
+        padding: 5%;
+        margin-top: 3%;
+    }
+
+    #tituloClientes
+    {
+        font-size: 2rem;
+    }
+
+    /* Footer */
+
+    footer
+    {
+        padding: 7% 2.5%;
+        width: 100%;
+    }
+    .opcoesFooter
+    {
+        align-items: center;
+        margin: 0;
         width: 100%;
     }
 
-    .headerOpcoes h1
+    .opcoesFooter h2
     {
-
+        margin-right: 10px;
+        font-size: 1rem;
     }
+
+    #logoFooter h1
+    {
+        font-size: 1.25rem;
+        margin-right: 15px;
+    }
+
+    #politica, #sobre
+    {
+        display: inline;
+        width: 100%;
+    }
+
+
+    /*Modal */
+
+    .modal-content2
+    {
+        width: 95%;
+        padding: 10%;
+    }
+
+    #tituloPolitica
+    {
+        font-size: 2rem;
+    }
+
+    .close2
+    {
+        margin-top: 7%;
+        margin-right: 3%;
+        color: black;
+        font-size: 4.5rem;
+    }
+
 
 
 }

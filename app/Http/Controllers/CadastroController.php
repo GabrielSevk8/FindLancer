@@ -26,19 +26,47 @@ class CadastroController extends Controller
         return redirect('/login');
     }
 
-    public function pegaUser(Request $id )
+    public function index()
     {
-        $usuario = new User();
+        $itens = $this->recuperaTodos();
+        # retorna a view com os dados encontrados
+        return view("painel_usuarios", compact("itens" ) );
+    }
+    public function recuperaTodos()
+    {
+        # instância da classe de usuários (model)
+        $usuarios = new User();
 
-        $usuarioEditar = $usuario::where('id','=',$id)->get();
+        # trazendo todos os usuários
+        # SQL - SELECT * FROM usuarios
+        # dd( $usuarios::all() );
 
-        return view('meus_dados')
-        -> with('editar', '')
-        -> with('id', $id)
-        -> with('usuarioEdit', $usuarioEditar);
+        #trazendo um usuário específico (WHERE)
+        # SQL - SELECT * FROM usuarios WHERE id = 5
+        # dd($usuarios::where( 'id', '=', 5)->get());
+
+        # trazendo direto pela posição (terceiro item na tabela)
+        # dd($usuarios::find(3));
+
+        $itens = $usuarios::all();
+        # retorna os valores encontrados
+        return $itens;
     }
 
-    public function alteraNome(Request $request)
+    public function pegaUser( $id )
+    {
+        //$id = $request->query('id');
+
+        $usuario = new User();
+
+        $usuarioEditar = $usuario::where('id','=', $id )->get();
+
+        return view('edicao_usuario', compact('usuarioEditar'));
+    }
+
+
+
+    /*public function alteraNome(Request $request)
     {
         dd('metodo chamado');
         $request->validate([
@@ -77,6 +105,30 @@ class CadastroController extends Controller
         $usuario->save();
 
         return redirect()->back()->with('success', 'Senha do usuário atualizada com sucesso!');
+    }*/
+
+    public function atualizar(Request $request){
+
+        $usuario = new User();
+
+        if( $request->password == "")
+        {
+
+            $usuario::where('id',$request->id)->update([
+                'nome' => $request->nome,
+                'email'=>$request->email
+            ]);
+        }
+        else
+        {
+            $usuario::where('id',$request->id)->update([
+                'nome' => $request->nome,
+                'email'=>$request->email,
+                'password'=>$request->password,
+            ]);
+        }
+
+        return redirect("/painel_usuarios");
     }
 
 }
