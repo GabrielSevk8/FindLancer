@@ -53,7 +53,7 @@ class CadastroController extends Controller
         return $itens;
     }
 
-    public function pegaUser( $id )
+    public function pegaUserEditar( $id )
     {
         //$id = $request->query('id');
 
@@ -62,6 +62,17 @@ class CadastroController extends Controller
         $usuarioEditar = $usuario::where('id','=', $id )->get();
 
         return view('edicao_usuario', compact('usuarioEditar'));
+    }
+
+    public function pegaUserDeletar( $id )
+    {
+        //$id = $request->query('id');
+
+        $usuario = new User();
+
+        $usuarioDeletar= $usuario::where('id','=', $id )->get();
+
+        return view('deleta_usuario', compact('usuarioDeletar'));
     }
 
 
@@ -124,9 +135,20 @@ class CadastroController extends Controller
             $usuario::where('id',$request->id)->update([
                 'nome' => $request->nome,
                 'email'=>$request->email,
-                'password'=>$request->password,
+                'password'=>bcrypt($request->password),
             ]);
         }
+
+        return redirect("/painel_usuarios");
+    }
+
+    public function deletar( $id )
+    {
+
+        $usuario = new User();
+
+        $usuario = User::findOrFail($id);
+        $usuario -> delete();
 
         return redirect("/painel_usuarios");
     }

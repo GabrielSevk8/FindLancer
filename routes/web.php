@@ -85,8 +85,8 @@ Route::post('/atualizar', [CadastroController::class, 'atualizar']);
 Route::post('/pega_user', [CadastroController::class, 'pegaUser']);
 
 Route::get('/painel_usuarios', [CadastroController::class ,'index']);
-Route::get('/painel_usuarios/edicao_usuario/{id}', [CadastroController::class ,'pegaUser']);
-
+Route::get('/painel_usuarios/edicao_usuario/{id}', [CadastroController::class ,'pegaUserEditar']);
+Route::get('/painel_usuarios/deleta_usuario/{id}', [CadastroController::class ,'pegaUserDeletar']);
 
 
 Route::get('/cadastro_vagas', function()

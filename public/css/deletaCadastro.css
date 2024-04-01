@@ -18,21 +18,24 @@
 
 }
 
-a{
+a
+{
     text-decoration: none;
-    color: black;
+    color: #5c6066;
 }
 
-.logout{
-    margin-right: 30px;
+a:hover
+{
+    color: #c40001;
 }
+
 
 p, span
 {
     font-size: 1.3rem;
 }
 
-.logo
+#logo
 {
     width: 20%;
     cursor: pointer;
@@ -40,12 +43,12 @@ p, span
     transition: transform ease-in-out 150ms;
 }
 
-.logo:hover
+#logo:hover
 {
     transform: scale(1.1);
 }
 
-.banner
+#banner
 {
     width: 100%;
 }
@@ -64,6 +67,8 @@ header
     width: 100%;
 }
 
+
+
 header h2
 {
     color: #5c6066;
@@ -76,35 +81,28 @@ header h2:hover
     color: #c40001;
 }
 
-.ladoHead
+ .ladoHead
 {
     align-items: center;
     width: 50%;
 }
 
-#lesquerdoHead
+#lesquerdoHead, #ldireitoHead
 {
     display: flex;
     justify-content: space-between;
 }
 
-#lesquerdoHead a
+#ldireitoHead form
 {
-    transition: transform ease-in-out 280ms;
-
-}
-
-#lesquerdoHead a:hover
-{
-    transform: scale(1.03);
-
-}
-
-#ldireitoHead{
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    padding: 0 2%;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 55%;
+    margin:  0 2.5rem;
 }
-
 
 
 
@@ -113,221 +111,159 @@ header h2:hover
     font-family: titulo;
     font-size: 1.5rem;
     cursor: pointer;
-}
-
-
-.login
-{
-    margin-left: 15px;
-    background-color: #860000;
-    height: 100%;
-    width: 38%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    color: white;
-    border: none;
-    transition: background-color ease-in-out 150ms;
-}
-
-.login:hover
-{
-    background-color: #272727;
-}
-
-.pesquisa
-{
-    display: flex;
-    border: none;
-    outline: none;
-    width: 100%;
-    padding: 1rem;
-}
-
-/*Hero*/
-
-
-.hero
-{
-    background-color: #272727;
-    display: flex;
-    justify-content: space-around;
-    height: 100%;
-    width: 100%;
-}
-
-
-.ldireito img
-{
-    height: 444.95px;
-    width: 600px;
-    margin-left: 0px !important;
-}
-
-.hero i
-{
-    font-size: 1.25rem;
-    margin-right: 10px;
-}
-
-.hero > #lesquerdo
-{
-    flex-direction: column;
-    color: white;
-    line-height: 1.5;
-    align-items: flex-start;
-    width: 63%;
-    padding: 3% 6%;
-}
-
-.titulo
-{
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-}
-
-.containerCriar
-{
-    background-color: white;
-    color: black;
-    padding: 2%;
-    width: 58%;
-    margin-top: 1rem;
-    border-radius: 8px;
-}
-
-.containerCriar p{
-    padding-bottom: 5px;
-}
-
-
-.caixaCriar
-{
-    display: flex;
-    max-width: 519px;
-    font-size: 50px;
-}
-
-
-
-
-
-.botaoCriar
-{
-    display: flex;
-    width: 40%;
-    background-color: #860000;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    height: 50%;
-    transition: transform ease-in-out 280ms;
-}
-
-.botaoCriar:hover
-{
-    transform: scale(1.03);
-    background-color: #272727;
-}
-
-
-#txtBotao
-{
-
-    color: white;
-}
-
-.botaoCriar a
-{
-    width: 100%;
-    text-align: center;
-
-}
-
-
-
-/* Avaliações */
-
-.containerClientes
-{
-    height: 65vh;
-    background-color: #860000;
-    color: white;
-    padding: 3%;
-
-}
-
-
-.tituloClientes
-{
-    text-align: center;
-    font-size: 2.3rem;
-}
-
-.avaliacoes
-{
-    display: flex;
-    justify-content: space-around;
-}
-
-.avaliacao
-{
-
-    height: 30vh;
-    width:30vw;
-    border: #7a7a7a solid 2px;
-    border-radius: 9px;
-    margin-top: 4rem;
-    background-color: white;
-    color: black;
-    padding:  1% 2.5%;
     transition: transform ease-in-out 200ms;
 }
 
-.avaliacao:hover
+.ladoHead h1:hover
 {
     transform: scale(1.04);
 }
 
 
-.SuperiorAvaliacao
+#login
 {
-    margin: 2% 0;
-    padding: 0 2%;
+    margin-left: 15px;
+    background-color: #212121;
+    height: 100%;
+    width: 38%;
     display: flex;
-
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: none;
+    transition: background-color ease-in-out 150ms;
 }
 
-
-.textoAvaliacao
+.modal
 {
-    display: inherit;
-flex-direction: row;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.stars
+.modal-content
 {
-    width: 5.5rem;
-    height: 70%;
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
 }
 
-.avaliacao .guest
+.close
 {
-    width: 3.5rem;
-    height: 3.5rem;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
+.close:hover,
+.close:focus
+{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
+/* Main*/
 
-.textoAvaliacao
+main
+{
+    padding: 4% 0;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1
+{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2% 0;
+    color: #860000;
+}
+
+main form
+{
+
+    width: 50%;
+}
+
+.cadastro
 {
     display: inherit;
     flex-direction: column;
+    align-items: center;
+    padding: 3% 0;
+    width: 50%;
+    border: 2px solid #860000;
+    border-radius: 8px;
+}
+
+form
+{
+    display: inherit;
+    flex-direction: inherit;
+}
+
+form input,form select
+{
+    margin-bottom: 5%;
+    padding: 4%;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+form label
+{
+    margin-bottom: 2%;
+}
+
+form button
+{
+    padding: 3%;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: #860000;
+    cursor: pointer;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
 footer
 {
     background-color: white;
@@ -336,6 +272,7 @@ footer
     justify-content: space-between;
     align-items: center;
     padding: 2rem 6rem;
+    border-top: 2px solid black;
 }
 
 footer img
@@ -476,101 +413,3 @@ footer img:hover
     right:0;
     margin-left: 3%;
   }
-
-@media(max-width:576px)
-{
-    header
-    {
-        padding: 2% 4%;
-    }
-
-    .ladoHead h1
-    {
-        font-size: 1rem;
-    }
-
-    #ldireitoHead
-    {
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .login
-    {
-        width: 25%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        padding: 0 17%;
-    }
-
-    /* Find Empresas*/
-
-    .ldireito, #logoFooter img
-    {
-        display: none;
-    }
-
-    .hero > #lesquerdo, .containerCriar
-    {
-        width: 100%;
-    }
-
-    .botaoCriar
-    {
-        display: inherit;
-        justify-content: center;
-    }
-
-    .tituloClientes
-    {
-        text-align: left;
-    }
-
-    .avaliacoes
-    {
-        display: block;
-    }
-
-    .avaliacao
-    {
-        padding: 5% 2.5%;
-    }
-
-    .avaliacao, .containerClientes
-    {
-        height: 100%;
-        width: 100%;
-    }
-
-
-    /*Footer*/
-
-    footer
-    {
-        padding: 2%;
-    }
-
-    .opcoesFooter h2
-    {
-        font-size: 0.8em;
-        margin: 0;
-        margin-right: 0;
-    }
-
-
-
-    .cr p
-    {
-        font-size: 0.8rem;
-        margin: 0;
-    }
-
-    #sobre, .opcoesFooter
-    {
-        margin: 0;
-    }
-
-
-
-}

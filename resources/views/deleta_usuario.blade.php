@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Meus Dados</title>
-    <link rel="stylesheet" href="{{ asset('css/atualizaCadastro.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/deletaCadastro.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="{{ asset('image/iconSite.png') }}">
 </head>
@@ -24,25 +24,17 @@
     <main>
         <div class="cadastro">
             <h1>Alterar Dados Pessoais</h1>
-            <form action="/atualizar" method="post">
+            <form action="/deletar" method="post">
                 @csrf
-                <input type="hidden" name="id" value="{{ $usuarioEditar[0]->id}}">
-                <label for="usuario">Usuário:</label>
-                <input type="text" id="usuario" name="nome" value="{{ $usuarioEditar[0]->nome}}">
-
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" value="{{ $usuarioEditar[0]->email}}">
-
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="password">
-
-                <button type="submit"> Atualizar </button>
+                <input type="hidden" name="id" value="{{ $usuarioDeletar[0]->id}}">
+                <h2>Deseja apagar o usuário {{ $usuarioDeletar[0]->nome}}?</h2>
+                <button type="submit"> Deletar </button>
 
             </form>
         </div>
 
     </main>
-    
+
     <footer>
 
         <div id="logoFooter">
@@ -130,7 +122,5 @@
         <script src="{{ asset('/js/modal_sobre.js')}}"></script>
 
     </footer>
-
-
 </body>
 </html>

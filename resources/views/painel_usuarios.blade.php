@@ -27,7 +27,7 @@
                     <p>
                         <a href="/painel_usuarios/edicao_usuario/{{ $resultado->id }}" class="edit"><i class="material-icons"
                                 title="Edit">&#xE254;</i></a>
-                        <a href="?apagar&id={{ $resultado->id }}" class="delete"><i class="material-icons"
+                        <a href="/painel_usuarios/deleta_usuario/{{ $resultado->id }}" class="delete"><i class="material-icons"
                                 title="Delete">&#xE872;</i></a>
                     </p>
                 </div>
