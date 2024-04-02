@@ -72,40 +72,25 @@ Route::post('/cadastro_vagas', [CadastraVagaController::class, "CadastrarVagas"]
 Route::get('/minhas_vagas', function()
 {
     return view ('minhas_vagas');
-});
+})->middleware('auth');
 
-/*
-Route::post('/meus_dados', [CadastroController::class, 'alteraNome']);
-Route::post('/meus_dados', [CadastroController::class, 'alteraEmail']);
-Route::post('/meus_dados', [CadastroController::class, 'alteraSenha']);
-*/
+Route::get('/cadastro_vagas', function()
+{
+    return view('cadastro_vagas');
+})->middleware('auth');
+
+Route::get('/meus_dados', function()
+{
+    return view ('meus_dados');
+})->middleware('auth');
+
 
 Route::post('/atualizar', [CadastroController::class, 'atualizar']);
-
 Route::post('/pega_user', [CadastroController::class, 'pegaUser']);
 
+//rotas: painel de usuarios
 Route::get('/painel_usuarios', [CadastroController::class ,'index']);
 Route::get('/painel_usuarios/edicao_usuario/{id}', [CadastroController::class ,'pegaUserEditar']);
-Route::get('/painel_usuarios/deleta_usuario/{id}', [CadastroController::class ,'pegaUserDeletar']);
+Route::get('/painel_usuarios/deleta_usuario/{id}', [CadastroController::class, 'deletar']);
 
 
-Route::get('/cadastro_vagas', function()
-{
-    return view('cadastro_vagas');
-});
-
-Route::get('/minhas_vagas', function()
-{
-    return view('minhas_vagas');
-});
-
-Route::get('/cadastro_vagas', function()
-{
-    return view('cadastro_vagas');
-});
-
-
-//usuario: mtreutel@gmail.com
-//senha: 1234
-
-//faça um código que seja possivel um usuario colocar dados em um input no laravel, e esses mesmos dados são enviados para um Mysql (dados: nome, email, senha)

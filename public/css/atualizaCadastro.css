@@ -90,7 +90,15 @@ header h2:hover
 #lesquerdoHead, #ldireitoHead
 {
     display: flex;
+
+}
+
+#lesquerdoHead{
     justify-content: space-between;
+}
+
+#ldireitoHead{
+    justify-content: flex-end;
 }
 
 #ldireitoHead form

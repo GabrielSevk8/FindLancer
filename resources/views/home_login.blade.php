@@ -83,38 +83,17 @@
 
 
 
-        <!--<div id="containerVagas">
-
-            <div id="tituloVagas">
-                <h1>Melhores Vagas</h1>
-            </div>
-            @foreach ( $todasVagas as $vaga )
 
 
-
-            <div id="vagas"></div>
-                <div class="vaga">
-                    <h1 class="tituloVaga">{{ $vaga->tItulo_vaga }}</h1>
-                    <h1>{{ $vaga->nome_empresa }}</h1>
-                    <p>R${{ $vaga->salario }}</p>
-                    <! -<p><strong></strong> Vaga (S)</p>- ->
-                    <p class="elipses">{{ $vaga->descricao }}</p>
-                    <button>Vaga Completa</button>
-                </div>
-            </div>
-
-
-            @endforeach
-
-
-        </div>
-
-        !-->
 
 
 
 
         <div id="selecaoFiltros">
+            <div id="textosCel">
+                    <H1>Procure vagas por áreas </H1>
+                    <p>Utilize nossos filtros ao lado para encontrar a vaga ideal.</p>
+            </div>
 
             <div id="listFiltros">
                 <div class="filtroCard">

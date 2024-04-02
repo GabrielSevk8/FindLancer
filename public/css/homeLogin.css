@@ -24,6 +24,11 @@ a
     color: #5c6066;
 }
 
+#textosCel
+{
+    display: none;
+}
+
 a:hover
 {
     color: #c40001;
@@ -737,4 +742,84 @@ footer img:hover
 .modal p {
     font-size: 16px;
     margin-bottom: 10px;
+}
+
+
+@media(max-width:576px)
+{
+
+    p
+    {
+        font-size: 1.1rem;
+    }
+
+    h1
+    {
+        font-size: 1.5rem;
+    }
+    header
+    {
+        padding: 4%;
+        padding-right: 0;
+        position: sticky;
+        top: 0;
+    }
+
+    #login
+    {
+        padding: 1%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    header h2, #ldireitoHead form, #textos, #selecaoFiltros, #ldireito, #logoFooter
+    {
+        display: none;
+    }
+
+    /* Hero*/
+
+    #lesquerdo, #containerPesquisa, #caixaPesquisa form, #botaoPesquisa
+    {
+        width: 100% !important;
+    }
+
+    #lesquerdo
+    {
+        padding: 8% !important;
+    }
+
+    #caixaPesquisa, #containerVagas, #textosCel, .hero
+    {
+        display: block !important;
+    }
+
+    #botaoPesquisa
+    {
+        margin-top: 3%;
+        margin-left: 0;
+    }
+
+    #textosCel
+    {
+        color: white;
+    }
+
+    footer
+    {
+        padding: 1%;
+        font-size: 0.9rem;
+    }
+
+    #sobre
+    {
+        margin: 0;
+    }
+    .cr
+    {
+        width: 100%;
+    }
+
 }

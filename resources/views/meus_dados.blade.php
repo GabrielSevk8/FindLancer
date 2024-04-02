@@ -15,16 +15,11 @@
         <div id="lesquerdoHead" class="ladoHead">
             <h1>Findlancer</h1>
             <h2><a href="/minhas_vagas">Minhas Vagas</a></h2>
-            <h2><a href="/meus_dados">Meus Dados</a></h2>
             <a href="/logout"><h2>Sair</h2></a>
         </div>
 
         <div id="ldireitoHead" class="ladoHead">
-            <form action="/pesquisa_vagas" method="POST">
-                <i class="bi bi-search lupa "></i>
-                <input type="text" placeholder="Pesquise Vagas Aqui" class="pesquisa" name="pesquisa">
-
-            </form>
+            
 
             <div id="login" class="sidenav">
                 <p>Ola <span id="nomeUsuario">{{ Auth::user()->nome }}</span></p>

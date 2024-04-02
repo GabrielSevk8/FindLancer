@@ -14,9 +14,6 @@
     <header>
         <div id="lesquerdoHead" class="ladoHead">
             <h1>Findlancer</h1>
-            <h2><a href="/minhas_vagas">Minhas Vagas</a></h2>
-            <h2><a href="/meus_dados">Meus Dados</a></h2>
-            <a href="/logout"><h2>Sair</h2></a>
         </div>
 
     </header>
@@ -42,7 +39,7 @@
         </div>
 
     </main>
-    
+
     <footer>
 
         <div id="logoFooter">

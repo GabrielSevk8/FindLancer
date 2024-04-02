@@ -149,13 +149,9 @@
 
         <div class="opcoesFooter">
 
-
             <h2 id="politica">Política de Privacidade</h2>
             <h2 id="sobre">Sobre Nós</h2>
-
-            <!-- Modal "Sobre"-->
             <div id="sobremodal" class="modal">
-            <!-- Conteúdo do modal -->
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <h3>"Sobre Nós"</h3>

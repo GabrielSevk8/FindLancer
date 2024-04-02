@@ -104,7 +104,7 @@ input
     flex-direction: column;
     background-color: #fff;
     border-radius: 15px;
-    height: 600px;
+    height: 110%;
     width: 350px;
     padding: 2rem 3rem;
     animation: pulse 1.5s infinite;
@@ -192,6 +192,42 @@ footer
     }
 }
 
-@media screen {
+@media (max-width: 576px)
+{
+    body
+    {
+        overflow-x: hidden!important;
+        overflow-y: hidden!important;
+        background-color: white;
+        max-width: 100%;
+        max-height: 100%;
+        overflow: hidden!important;
+    }
+
+    h1
+    {
+        color: #000;
+    }
+
+    footer
+    {
+        color: #000;
+        padding: 10px;
+    }
+
+    #imgCavalo
+    {
+        display: none;
+    }
+
+    #imgNome
+    {
+        display: none;
+    }
+
+    @keyframes pulse
+    {
+
+    }
 
 }
