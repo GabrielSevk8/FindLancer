@@ -536,7 +536,7 @@ footer img:hover
 
 @media (max-width:700px)
 {
-    .opcoesHeader, .ladoHead, #ldireito, .cr, .login, #imgHero
+    .opcoesHeader, .ladoHead, .cr, #imgHero
     {
         display: none;
     }
@@ -546,9 +546,25 @@ footer img:hover
         display: inline;
     }
 
+    .login
+    {
+        padding: 2% 5%;
+    }
+
+    .login h1
+    {
+        font-size: 1rem;
+        display: inline-block;
+    }
+
     header
     {
-        padding: 7%;
+        padding: 0;
+    }
+
+    .login
+    {
+        width: 35%;
     }
 
     .containerHeader
@@ -673,9 +689,8 @@ footer img:hover
         color: black;
         font-size: 4.5rem;
     }
-
-
-
 }
+
+
 
 

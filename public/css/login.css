@@ -291,6 +291,10 @@ footer{
         margin: 0px;
     }
 
+    .conteudo{
+
+    }
+
     .movi{
         margin-top: 50px;
         padding: 2rem 0rem;
@@ -298,7 +302,7 @@ footer{
 
     .buttonEntrar
     {
-        margin-left: 35px;
+        margin-left: 50px;
     }
 
     .entrar{

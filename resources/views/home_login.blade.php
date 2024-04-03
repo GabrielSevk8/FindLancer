@@ -26,7 +26,7 @@
             </form>
 
             <div id="login" class="sidenav">
-                <p>Ola <span id="nomeUsuario">{{ Auth::user()->nome }}</span></p>
+                <p>Olá, <span id="nomeUsuario">{{ Auth::user()->nome }}</span></p>
             </div>
 
         </div>

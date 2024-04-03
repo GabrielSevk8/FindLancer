@@ -8,10 +8,6 @@ use App\Http\Controllers\PesquisaController;
 use Illuminate\Support\Facades\Route;
 
 
-
-
-
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -93,4 +89,5 @@ Route::get('/painel_usuarios', [CadastroController::class ,'index']);
 Route::get('/painel_usuarios/edicao_usuario/{id}', [CadastroController::class ,'pegaUserEditar']);
 Route::get('/painel_usuarios/deleta_usuario/{id}', [CadastroController::class, 'deletar']);
 
+Route::get('/home_login/meus_dados/{id}', [CadastroController::class ,'pegaUserEditar']);
 

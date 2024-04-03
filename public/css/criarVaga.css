@@ -334,5 +334,53 @@ footer img:hover
     margin-left: 3%;
   }
 
+  @media(max-width:576px)
+  {
+    header
+    {
+        padding-left:1rem ;
+    }
+
+    footer
+    {
+        display: none;
+    }
+
+    header #lesquerdoHead h1
+    {
+        font-size: 1.1rem;
+    }
+
+    #ldireitoHead a h2
+    {
+        margin-right: 10px;
+    }
+    .login
+    {
+        width: 35%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-left: 2%;
+
+    }
+
+
+    .login span
+    {
+        font-size: 1.1rem;
+    }
+
+    #ldireitoHead
+    {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .cadastro
+    {
+        width: 100%;
+    }
+  }
 
 

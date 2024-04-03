@@ -765,6 +765,23 @@ footer img:hover
         top: 0;
     }
 
+    header h2
+    {
+        margin-right: 10px;
+    }
+
+    .ladoHead h1
+    {
+        font-size: 1.3rem;
+        margin-right: 15px;
+    }
+
+
+    header form
+    {
+        display: none;
+    }
+
     #login
     {
         padding: 1%;
@@ -774,7 +791,11 @@ footer img:hover
         right: 0;
     }
 
-    header h2, #ldireitoHead form, #textos, #selecaoFiltros, #ldireito, #logoFooter
+    #login p
+    {
+        text-align: center;
+    }
+    #login,#ldireitoHead form, #textos, #selecaoFiltros, #ldireito, #logoFooter
     {
         display: none;
     }
@@ -817,9 +838,29 @@ footer img:hover
     {
         margin: 0;
     }
-    .cr
+    .cr p
     {
-        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    /* Modal */
+
+    .modal-content2
+    {
+        width: 90%;
+        padding: 8%;
+    }
+
+    #tituloPolitica
+    {
+        font-size: 1.8rem;
+    }
+
+    .close2
+    {
+        top: 15px;
+        right: 15px;
+        color: black;
     }
 
 }

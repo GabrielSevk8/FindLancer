@@ -19,10 +19,10 @@
         </div>
 
         <div id="ldireitoHead" class="ladoHead">
-            
+
 
             <div id="login" class="sidenav">
-                <p>Ola <span id="nomeUsuario">{{ Auth::user()->nome }}</span></p>
+                <p>Olá, <span id="nomeUsuario">{{ Auth::user()->nome }}</span></p>
             </div>
 
         </div>
@@ -31,13 +31,14 @@
     <main>
         <div class="cadastro">
             <h1>Alterar Dados Pessoais</h1>
-            <form action="/meus_dados" method="post">
+            <form action="/atualizar" method="post">
                 @csrf
+                <input type="hidden" name="id">
                 <label for="usuario">Usuário:</label>
-                <input type="text" id="usuario" name="nome">
+                <input type="text" id="usuario" name="nome" value="{{ Auth::user()->nome }}">
 
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" value="{{ Auth::user()->email }}">
 
                 <label for="senha">Senha:</label>
                 <input type="password" id="senha" name="senha">
