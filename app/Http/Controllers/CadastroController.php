@@ -15,7 +15,7 @@ class CadastroController extends Controller
         $usuario = new User();
 
         # enviando os valores
-        $usuario -> nome = $request->input('name');
+        $usuario -> nome = $request->input('nome');
         $usuario -> email = $request->input('email');
         $usuario -> password = bcrypt($request->input('senha'));
         $usuario -> choose = $request->input('choose');
